@@ -1,7 +1,7 @@
 # LLM-grounded Diffusion: Enhancing Prompt Understanding of Text-to-Image Diffusion Models with Large Language Models
 [Long Lian](https://tonylian.com/), [Boyi Li](https://sites.google.com/site/boyilics/home), [Adam Yala](https://www.adamyala.org/), [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/) at UC Berkeley/UCSF.
 
-[Paper](https://arxiv.org/pdf/2305.13655.pdf) | [Project Page](https://llm-grounded-diffusion.github.io/) | [**Blog Post**](https://bair.berkeley.edu/blog/2023/05/23/lmd/) | [**HuggingFace Demo (stage 1 and 2)**](https://huggingface.co/spaces/longlian/llm-grounded-diffusion) | [Citation](#citation)
+[Paper](https://arxiv.org/pdf/2305.13655.pdf) | [Project Page](https://llm-grounded-diffusion.github.io/) | [**5-minute Blog Post**](https://bair.berkeley.edu/blog/2023/05/23/lmd/) | [**HuggingFace Demo (stage 1 and 2)**](https://huggingface.co/spaces/longlian/llm-grounded-diffusion) | [Citation](#citation)
 
 **TL;DR**: Text Prompt -> LLM -> Intermediate Representation (such as an image layout) -> Stable Diffusion -> Image.
 ![Main Image](https://llm-grounded-diffusion.github.io/main_figure.jpg)
