@@ -35,7 +35,7 @@ def blend_latents(latents_bg, latents_fg, fg_mask, fg_blending_ratio=0.01):
     return latents
 
 @torch.no_grad()
-def compose_latents(model_dict, latents_all_list, mask_tensor_list, num_inference_steps, overall_batch_size, height, width, latents_bg=None, bg_seed=None, compose_box_to_bg=True):
+def compose_latents(model_dict, latents_all_list, mask_tensor_list, num_inference_steps, overall_batch_size, height, width, latents_bg=None, bg_seed=None, compose_box_to_bg=True, use_fast_schedule=False, fast_after_steps=None):
     unet, scheduler, dtype = model_dict.unet, model_dict.scheduler, model_dict.dtype
     
     if latents_bg is None:
@@ -43,7 +43,11 @@ def compose_latents(model_dict, latents_all_list, mask_tensor_list, num_inferenc
         latents_bg = get_scaled_latents(overall_batch_size, unet.config.in_channels, height, width, generator, dtype, scheduler)
     
     # Other than t=T (idx=0), we only have masked latents. This is to prevent accidentally loading from non-masked part. Use same mask as the one used to compose the latents.
-    composed_latents = torch.zeros((num_inference_steps + 1, *latents_bg.shape), dtype=dtype)
+    if use_fast_schedule:
+        # If we use fast schedule, we only need to compose the frozen steps.
+        composed_latents = torch.zeros((fast_after_steps + 1, *latents_bg.shape), dtype=dtype)
+    else:
+        composed_latents = torch.zeros((num_inference_steps + 1, *latents_bg.shape), dtype=dtype)
     composed_latents[0] = latents_bg
     
     foreground_indices = torch.zeros(latents_bg.shape[-2:], dtype=torch.long)

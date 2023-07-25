@@ -1,6 +1,7 @@
 import torch
 from tqdm import tqdm
 import utils
+from utils import schedule
 from PIL import Image
 import gc
 import numpy as np
@@ -131,7 +132,7 @@ def generate_gligen(model_dict, latents, input_embeddings, num_inference_steps, 
     frozen_steps=20, frozen_mask=None,
     return_saved_cross_attn=False, saved_cross_attn_keys=None, return_cond_ca_only=False, return_token_ca_only=None, 
     offload_cross_attn_to_cpu=False, offload_latents_to_cpu=True,
-    return_box_vis=False, show_progress=True, save_all_latents=False, scheduler_key='dpm_scheduler', batched_condition=False):
+    return_box_vis=False, show_progress=True, save_all_latents=False, scheduler_key='dpm_scheduler', batched_condition=False, dynamic_num_inference_steps=False, fast_after_steps=None, fast_rate=2):
     """
     The `bboxes` should be a list, rather than a list of lists (one box per phrase, we can have multiple duplicated phrases).
     """
@@ -157,6 +158,8 @@ def generate_gligen(model_dict, latents, input_embeddings, num_inference_steps, 
             latents_all = [latents]
     
     scheduler.set_timesteps(num_inference_steps)
+    if fast_after_steps is not None:
+        scheduler.timesteps = schedule.get_fast_schedule(scheduler.timesteps, fast_after_steps, fast_rate)
     
     if frozen_mask is not None:
         frozen_mask = frozen_mask.to(dtype=dtype).clamp(0., 1.)
@@ -212,6 +215,9 @@ def generate_gligen(model_dict, latents, input_embeddings, num_inference_steps, 
         # perform guidance
         noise_pred_uncond, noise_pred_text = noise_pred.chunk(2)
         noise_pred = noise_pred_uncond + guidance_scale * (noise_pred_text - noise_pred_uncond)
+        
+        if dynamic_num_inference_steps:
+            schedule.dynamically_adjust_inference_steps(scheduler, index, t)
 
         # compute the previous noisy sample x_t -> x_t-1
         latents = scheduler.step(noise_pred, t, latents).prev_sample
@@ -219,7 +225,7 @@ def generate_gligen(model_dict, latents, input_embeddings, num_inference_steps, 
         if frozen_mask is not None and index < frozen_steps:
             latents = latents_all_input[index+1] * frozen_mask + latents * (1. - frozen_mask)
         
-        if save_all_latents:
+        if save_all_latents and (fast_after_steps is None or index < fast_after_steps):
             if offload_latents_to_cpu:
                 latents_all.append(latents.cpu())
             else:

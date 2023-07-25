@@ -105,6 +105,7 @@ def select_mask(masks, conf_scores, coarse_ious=None, rule="largest_over_conf", 
             plt.imshow(masks[ind])
         plt.tight_layout()
         plt.show()
+        plt.close()
 
     return mask, selection_conf
 

@@ -10,6 +10,8 @@ from shared import model_dict, sam_model_dict, DEFAULT_SO_NEGATIVE_PROMPT, DEFAU
 import gc
 
 verbose = False
+# Accelerates per-box generation
+use_fast_schedule = True
 
 vae, tokenizer, text_encoder, unet, dtype = model_dict.vae, model_dict.tokenizer, model_dict.text_encoder, model_dict.unet, model_dict.dtype
 
@@ -36,7 +38,7 @@ run_ind = None
 
 def generate_single_object_with_box_batch(prompts, bboxes, phrases, words, input_latents_list, input_embeddings, 
                                     sam_refine_kwargs, num_inference_steps, gligen_scheduled_sampling_beta=0.3, 
-                                    verbose=False, scheduler_key=None, visualize=True, batch_size=None):
+                                    verbose=False, scheduler_key=None, visualize=True, batch_size=None, **kwargs):
     # batch_size=None: does not limit the batch size (pass all input together)
     
     # prompts and words are not used since we don't have cross-attention control in this function
@@ -62,7 +64,7 @@ def generate_single_object_with_box_batch(prompts, bboxes, phrases, words, input
         _, single_object_images_batch, single_object_pil_images_box_ann_batch, latents_all_batch = pipelines.generate_gligen(
             model_dict, input_latents_batch, input_embeddings_batch, num_inference_steps, bboxes_batch, phrases_batch, gligen_scheduled_sampling_beta=gligen_scheduled_sampling_beta, 
             guidance_scale=guidance_scale, return_saved_cross_attn=False,
-            return_box_vis=True, save_all_latents=True, batched_condition=True, scheduler_key=scheduler_key
+            return_box_vis=True, save_all_latents=True, batched_condition=True, scheduler_key=scheduler_key, **kwargs
         )
         
         gc.collect()
@@ -172,16 +174,15 @@ def run(
         latents_all_list, mask_tensor_list, so_img_list = get_masked_latents_all_list(
             so_prompt_phrase_word_box_list, input_latents_list, 
             gligen_scheduled_sampling_beta=gligen_scheduled_sampling_beta,
-            sam_refine_kwargs=sam_refine_kwargs, so_input_embeddings=so_input_embeddings, num_inference_steps=num_inference_steps, scheduler_key=scheduler_key, verbose=verbose, batch_size=so_batch_size
+            sam_refine_kwargs=sam_refine_kwargs, so_input_embeddings=so_input_embeddings, num_inference_steps=num_inference_steps, scheduler_key=scheduler_key, verbose=verbose, batch_size=so_batch_size,
+            fast_after_steps=frozen_steps if use_fast_schedule else None, fast_rate=2
         )
-
-        
 
         composed_latents, foreground_indices, offset_list = latents.compose_latents_with_alignment(
             model_dict, latents_all_list, mask_tensor_list, num_inference_steps, 
             overall_batch_size, height, width, latents_bg=latents_bg, 
             align_with_overall_bboxes=align_with_overall_bboxes, overall_bboxes=overall_bboxes,
-            horizontal_shift_only=horizontal_shift_only
+            horizontal_shift_only=horizontal_shift_only, use_fast_schedule=use_fast_schedule, fast_after_steps=frozen_steps
         )
         
         overall_bboxes_flattened, overall_phrases_flattened = [], []

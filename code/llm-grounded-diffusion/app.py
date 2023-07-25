@@ -237,11 +237,11 @@ with gr.Blocks(
             with gr.Column(scale=1):
                 response = gr.Textbox(lines=8, label="Paste ChatGPT response here (no original caption needed)", placeholder=layout_placeholder)
                 overall_prompt_override = gr.Textbox(lines=2, label="Prompt for overall generation (optional but recommended)", placeholder="You can put your input prompt for layout generation here, helpful if your scene cannot be represented by background prompt and boxes only, e.g., with object interactions. If left empty: background prompt with [objects].", value="")
-                num_inference_steps = gr.Slider(1, 250, value=20, step=1, label="Number of denoising steps (set to >=50 for higher generation quality)")
+                num_inference_steps = gr.Slider(1, 250, value=50, step=1, label="Number of denoising steps (set to >=50 for higher generation quality)")
                 seed = gr.Slider(0, 10000, value=0, step=1, label="Seed")
                 with gr.Accordion("Advanced options (play around for better generation)", open=False):
-                    frozen_step_ratio = gr.Slider(0, 1, value=0.4, step=0.1, label="Foreground frozen steps ratio (higher: preserve object attributes; lower: higher coherence; set to 0: (almost) equivalent to vanilla GLIGEN except details)")
-                    gligen_scheduled_sampling_beta = gr.Slider(0, 1, value=0.3, step=0.1, label="GLIGEN guidance steps ratio (the beta value)")
+                    frozen_step_ratio = gr.Slider(0, 1, value=0.5, step=0.1, label="Foreground frozen steps ratio (higher: preserve object attributes; lower: higher coherence; set to 0: (almost) equivalent to vanilla GLIGEN except details)")
+                    gligen_scheduled_sampling_beta = gr.Slider(0, 1, value=0.4, step=0.1, label="GLIGEN guidance steps ratio (the beta value)")
                     dpm_scheduler = gr.Checkbox(label="Use DPM scheduler (unchecked: DDIM scheduler, may have better coherence, recommend >=50 inference steps)", show_label=False, value=True)
                     use_autocast = gr.Checkbox(label="Use FP16 Mixed Precision (faster but with slightly lower quality)", show_label=False, value=True)
                     fg_seed_start = gr.Slider(0, 10000, value=20, step=1, label="Seed for foreground variation")
