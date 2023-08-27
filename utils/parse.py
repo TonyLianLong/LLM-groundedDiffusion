@@ -1,47 +1,56 @@
 import ast
-import os
-import json
 from matplotlib.patches import Polygon
 from matplotlib.collections import PatchCollection
 import matplotlib.pyplot as plt
 import numpy as np
-import cv2
+import warnings
 import inflect
+import gradio as gr
 
 p = inflect.engine()
+# user_error = ValueError
+user_error = gr.Error
 
 img_dir = "imgs"
+objects_text = "Objects: "
 bg_prompt_text = "Background prompt: "
+bg_prompt_text_no_trailing_space = bg_prompt_text.rstrip()
+neg_prompt_text = "Negative prompt: "
+neg_prompt_text_no_trailing_space = neg_prompt_text.rstrip()
+
 # h, w
 box_scale = (512, 512)
 size = box_scale
 size_h, size_w = size
 print(f"Using box scale: {box_scale}")
 
+
 def parse_input(text=None, no_input=False):
+    warnings.warn("Parsing input without negative prompt is deprecated.")
+    
     if not text:
         if no_input:
-            return
+            raise user_error(f"No input parsed in \"{text}\".")
         
         text = input("Enter the response: ")
-    if "Objects: " in text:
-        text = text.split("Objects: ")[1]
+    if objects_text in text:
+        text = text.split(objects_text)[1]
         
-    text_split = text.split(bg_prompt_text)
+    text_split = text.split(bg_prompt_text_no_trailing_space)
     if len(text_split) == 2:
         gen_boxes, bg_prompt = text_split
     elif len(text_split) == 1:
         if no_input:
-            return
+            raise user_error(f"Invalid input (no background prompt): {text}")
         gen_boxes = text
         bg_prompt = ""
         while not bg_prompt:
             # Ignore the empty lines in the response
             bg_prompt = input("Enter the background prompt: ").strip()
-        if bg_prompt_text in bg_prompt:
-            bg_prompt = bg_prompt.split(bg_prompt_text)[1]
+        if bg_prompt_text_no_trailing_space in bg_prompt:
+            bg_prompt = bg_prompt.split(bg_prompt_text_no_trailing_space)[1]
     else:
-        raise ValueError(f"text: {text}")
+        raise user_error(f"Invalid input (possibly multiple background prompts): {text}")
     try:
         gen_boxes = ast.literal_eval(gen_boxes)    
     except SyntaxError as e:
@@ -54,7 +63,70 @@ def parse_input(text=None, no_input=False):
     
     return gen_boxes, bg_prompt
 
+def parse_input_with_negative(text=None, no_input=False):
+    # no_input: should not request interactive input
+    
+    if not text:
+        if no_input:
+            raise user_error(f"No input parsed in \"{text}\".")
+        
+        text = input("Enter the response: ")
+    if objects_text in text:
+        text = text.split(objects_text)[1]
+        
+    text_split = text.split(bg_prompt_text_no_trailing_space)
+    if len(text_split) == 2:
+        gen_boxes, text_rem = text_split
+    elif len(text_split) == 1:
+        if no_input:
+            raise user_error(f"Invalid input (no background prompt): {text}")
+        gen_boxes = text
+        text_rem = ""
+        while not text_rem:
+            # Ignore the empty lines in the response
+            text_rem = input("Enter the background prompt: ").strip()
+        if bg_prompt_text_no_trailing_space in text_rem:
+            text_rem = text_rem.split(bg_prompt_text_no_trailing_space)[1]
+    else:
+        raise user_error(f"Invalid input (possibly multiple background prompts): {text}")
+    
+    text_split = text_rem.split(neg_prompt_text_no_trailing_space)
+    
+    if len(text_split) == 2:
+        bg_prompt, neg_prompt = text_split
+    elif len(text_split) == 1:
+        bg_prompt = text_rem
+        # Negative prompt is optional: if it's not provided, we default to empty string
+        neg_prompt = ""
+        if not no_input:
+            # Ignore the empty lines in the response
+            neg_prompt = input("Enter the negative prompt: ").strip()
+            if neg_prompt_text_no_trailing_space in neg_prompt:
+                neg_prompt = neg_prompt.split(neg_prompt_text_no_trailing_space)[1]
+    else:
+        raise user_error(f"Invalid input (possibly multiple negative prompts): {text}")
+    
+    try:
+        gen_boxes = ast.literal_eval(gen_boxes)    
+    except SyntaxError as e:
+        # Sometimes the response is in plain text
+        if "No objects" in gen_boxes or gen_boxes.strip() == "":
+            gen_boxes = []
+        else:
+            raise e
+    bg_prompt = bg_prompt.strip()
+    neg_prompt = neg_prompt.strip()
+    
+    # LLM may return "None" to mean no negative prompt provided.
+    if neg_prompt == "None":
+        neg_prompt = ""
+    
+    return gen_boxes, bg_prompt, neg_prompt
+
 def filter_boxes(gen_boxes, scale_boxes=True, ignore_background=True, max_scale=3):
+    if gen_boxes is None:
+        return []
+    
     if len(gen_boxes) == 0:
         return []
     
@@ -62,9 +134,13 @@ def filter_boxes(gen_boxes, scale_boxes=True, ignore_background=True, max_scale=
     gen_boxes_new = []
     for gen_box in gen_boxes:
         if isinstance(gen_box, dict):
+            if not gen_box['bounding_box']:
+                continue
             name, [bbox_x, bbox_y, bbox_w, bbox_h] = gen_box['name'], gen_box['bounding_box']
             box_dict_format = True
         else:
+            if not gen_box[1]:
+                continue
             name, [bbox_x, bbox_y, bbox_w, bbox_h] = gen_box
         if bbox_w <= 0 or bbox_h <= 0:
             # Empty boxes
@@ -73,6 +149,12 @@ def filter_boxes(gen_boxes, scale_boxes=True, ignore_background=True, max_scale=
             if (bbox_w >= size[1] and bbox_h >= size[0]) or bbox_x > size[1] or bbox_y > size[0]:
                 # Ignore the background boxes
                 continue
+        
+        if bbox_x < 0 or bbox_y < 0 or bbox_x + bbox_w > size[1] or bbox_y + bbox_h > size[0]:
+            # Out of bounds boxes exist: we need to scale and shift all the boxes
+            print(f"**Some boxes are out of bounds: {gen_box}, scaling all the boxes to fit**")
+            scale_boxes = True
+
         gen_boxes_new.append(gen_box)
     
     gen_boxes = gen_boxes_new
@@ -99,9 +181,11 @@ def filter_boxes(gen_boxes, scale_boxes=True, ignore_background=True, max_scale=
     
     # Used if scale_boxes is True
     shift = -bbox_left_x_min
-    scale = size_w / (bbox_right_x_max - bbox_left_x_min)
+    # Make sure the boxes fit horizontally and vertically
+    scale_w = size_w / (bbox_right_x_max - bbox_left_x_min)
+    scale_h = size_h / (bbox_bottom_y_max - bbox_top_y_min)
     
-    scale = min(scale, max_scale)
+    scale = min(scale_w, scale_h, max_scale)
     
     for gen_box in gen_boxes:
         if box_dict_format:
@@ -165,7 +249,7 @@ def draw_boxes(anns):
     ax.add_collection(p)
 
 
-def show_boxes(gen_boxes, bg_prompt=None, ind=None, show=False):
+def show_boxes(gen_boxes, bg_prompt=None, neg_prompt=None, ind=None, show=False, save=False):
     if len(gen_boxes) == 0:
         return
     
@@ -183,7 +267,7 @@ def show_boxes(gen_boxes, bg_prompt=None, ind=None, show=False):
 
     if bg_prompt is not None:
         ax = plt.gca()
-        ax.text(0, 0, bg_prompt, style='italic',
+        ax.text(0, 0, bg_prompt + f"(Neg: {neg_prompt})" if neg_prompt else bg_prompt, style='italic',
                 bbox={'facecolor': 'white', 'alpha': 0.7, 'pad': 5})
 
         c = (np.zeros((1, 3)))
@@ -201,11 +285,10 @@ def show_boxes(gen_boxes, bg_prompt=None, ind=None, show=False):
     if show:
         plt.show()
     else:
-        print("Saved to", f"{img_dir}/boxes.png", f"ind: {ind}")
+        print("Saved boxes visualizations to", f"{img_dir}/boxes.png", f"ind: {ind}")
         if ind is not None:
             plt.savefig(f"{img_dir}/boxes_{ind}.png")
         plt.savefig(f"{img_dir}/boxes.png")
-
 
 def show_masks(masks):
     masks_to_show = np.zeros((*size, 3), dtype=np.float32)

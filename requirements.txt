@@ -10,3 +10,4 @@ inflect==6.0.4
 easydict
 accelerate==0.18.0
 gradio==3.35.2
+pydantic==1.10.7

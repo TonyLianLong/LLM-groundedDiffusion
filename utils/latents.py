@@ -44,9 +44,10 @@ def compose_latents(model_dict, latents_all_list, mask_tensor_list, num_inferenc
     
     # Other than t=T (idx=0), we only have masked latents. This is to prevent accidentally loading from non-masked part. Use same mask as the one used to compose the latents.
     if use_fast_schedule:
-        # If we use fast schedule, we only need to compose the frozen steps.
+        # If we use fast schedule, we only compose the frozen steps because the later steps do not match.
         composed_latents = torch.zeros((fast_after_steps + 1, *latents_bg.shape), dtype=dtype)
     else:
+        # Otherwise we compose all steps so that we don't need to compose again if we change the frozen steps.
         composed_latents = torch.zeros((num_inference_steps + 1, *latents_bg.shape), dtype=dtype)
     composed_latents[0] = latents_bg
     
@@ -73,7 +74,10 @@ def compose_latents(model_dict, latents_all_list, mask_tensor_list, num_inferenc
         latents_all, mask_tensor = latents_all_list[mask_idx], mask_tensor_list[mask_idx]
         foreground_indices = foreground_indices * (~mask_tensor) + (mask_idx + 1) * mask_tensor
         mask_tensor_expanded = mask_tensor[None, None, None, ...].to(dtype)
-        composed_latents = composed_latents * (1. - mask_tensor_expanded) + latents_all * mask_tensor_expanded
+        if use_fast_schedule:
+            composed_latents = composed_latents * (1. - mask_tensor_expanded) + latents_all[:fast_after_steps + 1] * mask_tensor_expanded
+        else:
+            composed_latents = composed_latents * (1. - mask_tensor_expanded) + latents_all * mask_tensor_expanded
         
     composed_latents, foreground_indices = composed_latents.to(torch_device), foreground_indices.to(torch_device)
     return composed_latents, foreground_indices

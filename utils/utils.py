@@ -1,10 +1,9 @@
 import torch
 from PIL import ImageDraw
 import numpy as np
-import os
 import gc
 
-torch_device = "cuda" if torch.cuda.is_available() else "cpu"
+torch_device = "cuda"
 
 def draw_box(pil_img, bboxes, phrases):
     draw = ImageDraw.Draw(pil_img)
@@ -17,16 +16,32 @@ def draw_box(pil_img, bboxes, phrases):
     
     return pil_img
 
-def get_centered_box(box, horizontal_center_only=True):
+def get_centered_box(box, horizontal_center_only=True, vertical_placement='centered', vertical_center=0.5, floor_padding=None):
     x_min, y_min, x_max, y_max = box
     w = x_max - x_min
     
+    x_min_new = 0.5 - w/2
+    x_max_new = 0.5 + w/2
+    
     if horizontal_center_only:
-        return [0.5 - w/2, y_min, 0.5 + w/2, y_max]
+        return [x_min_new, y_min, x_max_new, y_max]
     
     h = y_max - y_min
     
-    return [0.5 - w/2, 0.5 - h/2, 0.5 + w/2, 0.5 + h/2]
+    if vertical_placement == 'centered':
+        assert floor_padding is None, "Set vertical_placement to floor_padding to use floor padding"
+        
+        y_min_new = vertical_center - h/2
+        y_max_new = vertical_center + h/2
+    elif vertical_placement == 'floor_padding':
+        # Ignores `vertical_center`
+        
+        y_max_new = 1 - floor_padding
+        y_min_new = y_max_new - h
+    else:
+        raise ValueError(f"Unknown vertical placement: {vertical_placement}")
+    
+    return [x_min_new, y_min_new, x_max_new, y_max_new]
 
 # NOTE: this changes the behavior of the function
 def proportion_to_mask(obj_box, H, W, use_legacy=False, return_np=False):

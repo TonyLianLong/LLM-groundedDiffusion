@@ -6,6 +6,7 @@ import torch.nn.functional as F
 from models import torch_device
 from transformers import SamModel, SamProcessor
 import utils
+from utils import vis
 import cv2
 from scipy import ndimage
 
@@ -43,8 +44,8 @@ def sam(sam_model_dict, image, input_points=None, input_boxes=None, target_mask_
         conf_scores = outputs.iou_scores.cpu().numpy()[0,0]
         del inputs, outputs
     
-    gc.collect()
-    torch.cuda.empty_cache()
+    # Uncomment if experiencing out-of-memory error:
+    # utils.free_memory()
     
     if return_numpy:
         masks = [F.interpolate(masks_item.type(torch.float), target_mask_shape, mode='bilinear').type(torch.bool).numpy() for masks_item in masks]
@@ -95,7 +96,7 @@ def select_mask(masks, conf_scores, coarse_ious=None, rule="largest_over_conf", 
         # print(f"Confidences: {conf_scores}")
         print(f"Selected a mask with confidence: {selection_conf}, coarse_iou: {selection_coarse_iou}")
 
-    if verbose:
+    if verbose >= 2:
         plt.figure(figsize=(10, 8))
         # plt.suptitle("After SAM")
         for ind in range(3):
@@ -124,7 +125,11 @@ def preprocess_mask(token_attn_np_smooth, mask_th, n_erode_dilate_mask=0):
 def sam_refine_attn(sam_input_image, token_attn_np, model_dict, height, width, H, W, use_box_input, gaussian_sigma, mask_th_for_box, n_erode_dilate_mask_for_box, mask_th_for_point, discourage_mask_below_confidence, discourage_mask_below_coarse_iou, verbose):
     
     # token_attn_np is for visualizations
-    token_attn_np_smooth = ndimage.gaussian_filter(token_attn_np, sigma=gaussian_sigma)
+    token_attn_np_smooth = ndimage.gaussian_filter(token_attn_np.astype(float), sigma=gaussian_sigma)
+
+    if verbose >= 2:
+        # Visualize one token only
+        vis.visualize_arrays([(token_attn_np, f"token_attn_np"), (token_attn_np_smooth, f"token_attn_np_smooth")], colorbar_index=1)
 
     # (w, h)
     mask_size_scale = height // token_attn_np_smooth.shape[1], width // token_attn_np_smooth.shape[0]
@@ -148,14 +153,17 @@ def sam_refine_attn(sam_input_image, token_attn_np, model_dict, height, width, H
 
         masks, conf_scores = sam_point_input(model_dict, image=sam_input_image, input_points=input_points, target_mask_shape=(H, W))
         
-    if verbose:
-        plt.title("Coarse binary mask (for box for box input and for iou)")
+    if verbose >= 2:
+        plt.title("Coarse binary mask (for getting the box with box input and for iou)")
         plt.imshow(mask_binary)
         plt.show()
     
-    coarse_ious = get_iou_with_resize(mask_binary, masks, masks_shape=mask_binary.shape)
+    # Assuming one image, one three-masks per image (so we have indexing twice)
+    three_masks = masks[0][0]
+    
+    coarse_ious = get_iou_with_resize(mask_binary, three_masks, masks_shape=mask_binary.shape)
 
-    mask_selected, conf_score_selected = select_mask(masks, conf_scores, coarse_ious=coarse_ious, 
+    mask_selected, conf_score_selected = select_mask(three_masks, conf_scores, coarse_ious=coarse_ious, 
                                                          rule="largest_over_conf", 
                                                          discourage_mask_below_confidence=discourage_mask_below_confidence, 
                                                          discourage_mask_below_coarse_iou=discourage_mask_below_coarse_iou,
@@ -164,8 +172,12 @@ def sam_refine_attn(sam_input_image, token_attn_np, model_dict, height, width, H
     return mask_selected, conf_score_selected
 
 def sam_refine_box(sam_input_image, box, *args, **kwargs):
-    sam_input_images, boxes = [sam_input_image], [box]
-    return sam_refine_boxes(sam_input_images, boxes, *args, **kwargs)
+    # One image with one box
+    
+    sam_input_images, boxes = [sam_input_image], [[box]]
+    mask_selected_batched_list, conf_score_selected_batched_list = sam_refine_boxes(sam_input_images, boxes, *args, **kwargs)
+
+    return mask_selected_batched_list[0][0], conf_score_selected_batched_list[0][0]
 
 def sam_refine_boxes(sam_input_images, boxes, model_dict, height, width, H, W, discourage_mask_below_confidence, discourage_mask_below_coarse_iou, verbose):
     # (w, h)
@@ -179,12 +191,12 @@ def sam_refine_boxes(sam_input_images, boxes, model_dict, height, width, H, W, d
         mask_selected_list, conf_score_selected_list = [], []
         for box, three_masks in zip(boxes_item, masks_item):
             mask_binary = utils.proportion_to_mask(box, H, W, return_np=True)
-            if verbose:
+            if verbose >= 2:
                 # Also the box is the input for SAM
                 plt.title("Binary mask from input box (for iou)")
                 plt.imshow(mask_binary)
                 plt.show()
-                        
+            
             coarse_ious = get_iou_with_resize(mask_binary, three_masks, masks_shape=mask_binary.shape)
 
             mask_selected, conf_score_selected = select_mask(three_masks, conf_scores, coarse_ious=coarse_ious, 

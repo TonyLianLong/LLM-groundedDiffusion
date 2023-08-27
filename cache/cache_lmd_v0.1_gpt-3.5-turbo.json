@@ -1,0 +1,902 @@
+{
+    "A realistic photo of a scene without backpacks": [
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: backpacks",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: backpacks",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: backpacks",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: backpacks",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: backpacks",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: backpacks",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: backpacks",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: backpacks",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: backpacks",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: backpacks"
+    ],
+    "A realistic photo of a scene without books": [
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: books",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: books",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: books",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: books",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: books",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: books",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: books",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: books",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: books",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: books"
+    ],
+    "A realistic photo of a scene without bottles": [
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bottles",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bottles",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bottles",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bottles",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bottles",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bottles",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bottles",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bottles",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bottles",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bottles"
+    ],
+    "A realistic photo of a scene without bowls": [
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bowls",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bowls",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bowls",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bowls",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bowls",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bowls",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bowls",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bowls",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bowls",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: bowls"
+    ],
+    "A realistic photo of a scene without cars": [
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cars",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cars",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cars",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cars",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cars",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cars",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cars",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cars",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cars",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cars"
+    ],
+    "A realistic photo of a scene without cats": [
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cats",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cats",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cats",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cats",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cats",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cats",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cats",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cats",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cats",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cats"
+    ],
+    "A realistic photo of a scene without chairs": [
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: chairs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: chairs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: chairs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: chairs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: chairs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: chairs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: chairs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: chairs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: chairs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: chairs"
+    ],
+    "A realistic photo of a scene without cups": [
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cups",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cups",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cups",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cups",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cups",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cups",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cups",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cups",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cups",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: cups"
+    ],
+    "A realistic photo of a scene without dogs": [
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: dogs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: dogs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: dogs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: dogs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: dogs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: dogs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: dogs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: dogs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: dogs",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: dogs"
+    ],
+    "A realistic photo of a scene without laptops": [
+        "[('A realistic scene', [0, 0, 512, 512])]\nBackground prompt: A realistic photo of a scene\nNegative prompt: laptops",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: laptops",
+        "[('A realistic scene', [0, 0, 512, 512])]\nBackground prompt: A realistic photo of a scene\nNegative prompt: laptops",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: laptops",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: laptops",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: laptops",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: laptops",
+        "[('A realistic scene', [0, 0, 512, 512])]\nBackground prompt: A realistic photo of a scene\nNegative prompt: laptops",
+        "[]\nBackground prompt: A realistic scene\nNegative prompt: laptops",
+        "[('A realistic scene', [0, 0, 512, 512])]\nBackground prompt: A realistic photo of a scene\nNegative prompt: laptops"
+    ],
+    "A realistic photo of a scene with one backpack": [
+        "[('a backpack', [203, 200, 106, 112])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a backpack', [200, 200, 112, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with one book": [
+        "[('a book', [206, 206, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a book', [200, 200, 112, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with one bottle": [
+        "[('a bottle', [201, 201, 110, 210])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a bottle', [201, 201, 110, 210])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with one bowl": [
+        "[('a bowl', [200, 200, 112, 112])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a bowl', [200, 200, 112, 112])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with one car": [
+        "[('a car', [200, 200, 112, 56])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a car', [200, 200, 112, 64])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with one cat": [
+        "[('a cat', [196, 184, 120, 120])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a cat', [0, 0, 512, 512])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with one chair": [
+        "[('a chair', [200, 200, 112, 112])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a chair', [200, 200, 112, 112])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with one cup": [
+        "[('a cup', [201, 201, 110, 110])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a cup', [201, 201, 110, 110])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with one dog": [
+        "[('a dog', [200, 200, 112, 112])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a dog', [198, 82, 116, 130])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with one laptop": [
+        "[('a laptop', [200, 200, 112, 80])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a laptop', [190, 190, 132, 132])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with two backpacks": [
+        "[('a backpack', [123, 234, 156, 189]), ('a backpack', [267, 245, 155, 177])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a backpack', [99, 189, 141, 162]), ('a backpack', [272, 197, 141, 162])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with two books": [
+        "[('a book', [60, 200, 200, 250]), ('a book', [252, 200, 200, 250])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a book', [66, 206, 190, 246]), ('a book', [256, 206, 190, 246])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with two bottles": [
+        "[('a bottle', [201, 201, 110, 210]), ('a bottle', [201, 21, 110, 210])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a bottle', [50, 200, 150, 250]), ('a bottle', [312, 180, 150, 250])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with two bowls": [
+        "[('a bowl', [100, 200, 150, 150]), ('a bowl', [262, 200, 150, 150])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a bowl', [186, 191, 140, 140]), ('a bowl', [186, 351, 140, 140])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with two cars": [
+        "[('a car', [100, 200, 150, 100]), ('a car', [262, 200, 150, 100])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a car', [50, 200, 200, 100]), ('a car', [262, 200, 200, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with two cats": [
+        "[('a cat', [100, 100, 200, 200]), ('a cat', [300, 100, 200, 200])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a cat', [100, 100, 150, 150]), ('a cat', [262, 200, 150, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with two chairs": [
+        "[('two chairs', [182, 202, 148, 208])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('two chairs', [200, 200, 112, 112])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with two cups": [
+        "[('a cup', [189, 189, 134, 134]), ('a cup', [189, 355, 134, 134])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a cup', [183, 195, 146, 192]), ('a cup', [183, 3, 146, 192])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with two dogs": [
+        "[('a dog', [82, 120, 163, 195]), ('a dog', [267, 120, 163, 195])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a dog', [51, 67, 271, 324]), ('a dog', [302, 119, 211, 228])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with two laptops": [
+        "[('a laptop', [45, 186, 210, 140]), ('a laptop', [257, 186, 210, 140])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a laptop', [50, 200, 200, 150]), ('a laptop', [262, 200, 200, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with three backpacks": [
+        "[('a backpack', [47, 201, 137, 144]), ('a backpack', [198, 185, 121, 160]), ('a backpack', [335, 202, 137, 143])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a backpack', [70, 200, 150, 200]), ('a backpack', [220, 200, 150, 200]), ('a backpack', [370, 200, 150, 200])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with three books": [
+        "[('a book', [50, 200, 150, 200]), ('a book', [206, 200, 150, 200]), ('a book', [362, 200, 150, 200])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a book', [75, 197, 133, 210]), ('a book', [209, 197, 133, 210]), ('a book', [343, 197, 133, 210])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with three bottles": [
+        "[('a bottle', [55, 200, 134, 240]), ('a bottle', [210, 180, 134, 240]), ('a bottle', [365, 220, 134, 240])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a bottle', [42, 198, 142, 244]), ('a bottle', [201, 186, 133, 253]), ('a bottle', [361, 194, 141, 245])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with three bowls": [
+        "[('a bowl', [77, 206, 120, 120]), ('a bowl', [206, 206, 120, 120]), ('a bowl', [335, 206, 120, 120])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a bowl', [85, 235, 134, 134]), ('a bowl', [218, 235, 134, 134]), ('a bowl', [351, 235, 134, 134])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with three cars": [
+        "[('a car', [50, 220, 150, 100]), ('a car', [206, 220, 150, 100]), ('a car', [362, 220, 150, 100])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a car', [32, 240, 149, 101]), ('a car', [200, 240, 149, 101]), ('a car', [368, 240, 149, 101])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with three cats": [
+        "[('a cat', [85, 60, 139, 139]), ('a cat', [206, 60, 139, 139]), ('a cat', [327, 60, 139, 139])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a cat', [64, 78, 150, 150]), ('a cat', [218, 92, 150, 150]), ('a cat', [372, 106, 150, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with three chairs": [
+        "[('a chair', [20, 20, 157, 200]), ('a chair', [187, 20, 157, 200]), ('a chair', [354, 20, 157, 200])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a chair', [33, 240, 148, 180]), ('a chair', [198, 240, 148, 180]), ('a chair', [363, 240, 148, 180])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with three cups": [
+        "[('a cup', [50, 200, 100, 150]), ('a cup', [200, 200, 100, 150]), ('a cup', [350, 200, 100, 150])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a cup', [51, 208, 137, 152]), ('a cup', [207, 208, 137, 152]), ('a cup', [363, 208, 137, 152])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with three dogs": [
+        "[('a dog', [40, 80, 140, 140]), ('a dog', [200, 80, 140, 140]), ('a dog', [360, 80, 140, 140])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a dog', [35, 42, 146, 150]), ('a dog', [205, 56, 146, 150]), ('a dog', [375, 42, 146, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with three laptops": [
+        "[('a laptop', [40, 100, 160, 120]), ('a laptop', [206, 100, 160, 120]), ('a laptop', [372, 100, 160, 120])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a laptop', [34, 68, 160, 120]), ('a laptop', [206, 68, 160, 120]), ('a laptop', [378, 68, 160, 120])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with four backpacks": [
+        "[('a backpack', [25, 190, 130, 150]), ('a backpack', [180, 190, 130, 150]), ('a backpack', [335, 190, 130, 150]), ('a backpack', [25, 360, 130, 150])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a backpack', [58, 207, 133, 135]), ('a backpack', [222, 207, 133, 135]), ('a backpack', [58, 358, 133, 135]), ('a backpack', [222, 358, 133, 135])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with four books": [
+        "[('a book', [55, 212, 139, 188]), ('a book', [220, 212, 139, 188]), ('a book', [385, 212, 139, 188]), ('a book', [150, 20, 139, 188])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a book', [35, 201, 119, 157]), ('a book', [166, 201, 119, 157]), ('a book', [297, 201, 119, 157]), ('a book', [428, 201, 119, 157])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with four bottles": [
+        "[('a bottle', [40, 200, 120, 200]), ('a bottle', [200, 200, 120, 200]), ('a bottle', [360, 200, 120, 200]), ('a bottle', [120, 400, 120, 200])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a bottle', [48, 92, 122, 328]), ('a bottle', [192, 92, 122, 328]), ('a bottle', [336, 92, 122, 328]), ('a bottle', [480, 92, 122, 328])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with four bowls": [
+        "[('a bowl', [68, 201, 123, 90]), ('a bowl', [68, 309, 123, 90]), ('a bowl', [321, 201, 123, 90]), ('a bowl', [321, 309, 123, 90])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a bowl', [20, 20, 236, 236]), ('a bowl', [256, 20, 236, 236]), ('a bowl', [20, 256, 236, 236]), ('a bowl', [256, 256, 236, 236])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with four cars": [
+        "[('a car', [20, 246, 120, 100]), ('a car', [160, 246, 120, 100]), ('a car', [300, 246, 120, 100]), ('a car', [440, 246, 120, 100])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a car', [40, 246, 133, 99]), ('a car', [196, 246, 133, 99]), ('a car', [352, 246, 133, 99]), ('a car', [40, 373, 133, 99])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with four cats": [
+        "[('a cat', [30, 30, 200, 200]), ('a cat', [282, 30, 200, 200]), ('a cat', [30, 282, 200, 200]), ('a cat', [282, 282, 200, 200])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a cat', [25, 45, 160, 160]), ('a cat', [195, 45, 160, 160]), ('a cat', [365, 45, 160, 160]), ('a cat', [135, 215, 160, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with four chairs": [
+        "[('a chair', [15, 206, 118, 131]), ('a chair', [151, 206, 118, 131]), ('a chair', [287, 206, 118, 131]), ('a chair', [423, 206, 118, 131])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a chair', [20, 20, 236, 236]), ('a chair', [256, 20, 236, 236]), ('a chair', [20, 256, 236, 236]), ('a chair', [256, 256, 236, 236])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with four cups": [
+        "[('a cup', [81, 198, 100, 100]), ('a cup', [81, 314, 100, 100]), ('a cup', [331, 198, 100, 100]), ('a cup', [331, 314, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a cup', [51, 200, 100, 100]), ('a cup', [171, 200, 100, 100]), ('a cup', [291, 200, 100, 100]), ('a cup', [411, 200, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with four dogs": [
+        "[('a dog', [36, 45, 135, 147]), ('a dog', [186, 45, 135, 147]), ('a dog', [336, 45, 135, 147]), ('a dog', [486, 45, 135, 147])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a dog', [41, 81, 139, 139]), ('a dog', [332, 81, 139, 139]), ('a dog', [41, 292, 139, 139]), ('a dog', [332, 292, 139, 139])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with four laptops": [
+        "[('a laptop', [40, 100, 170, 120]), ('a laptop', [260, 100, 170, 120]), ('a laptop', [40, 280, 170, 120]), ('a laptop', [260, 280, 170, 120])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a laptop', [30, 30, 226, 160]), ('a laptop', [256, 30, 226, 160]), ('a laptop', [30, 202, 226, 160]), ('a laptop', [256, 202, 226, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with five backpacks": [
+        "[('a backpack', [45, 187, 114, 132]), ('a backpack', [177, 187, 114, 132]), ('a backpack', [309, 187, 114, 132]), ('a backpack', [441, 187, 114, 132]), ('a backpack', [273, 45, 114, 132])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a backpack', [30, 200, 100, 150]), ('a backpack', [150, 200, 100, 150]), ('a backpack', [270, 200, 100, 150]), ('a backpack', [390, 200, 100, 150]), ('a backpack', [210, 20, 100, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with five books": [
+        "[('a book', [40, 200, 100, 150]), ('a book', [160, 200, 100, 150]), ('a book', [280, 200, 100, 150]), ('a book', [400, 200, 100, 150]), ('a book', [220, 20, 100, 150])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a book', [47, 83, 100, 150]), ('a book', [157, 83, 100, 150]), ('a book', [267, 83, 100, 150]), ('a book', [377, 83, 100, 150]), ('a book', [487, 83, 100, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with five bottles": [
+        "[('a bottle', [48, 89, 98, 251]), ('a bottle', [170, 89, 98, 251]), ('a bottle', [292, 89, 98, 251]), ('a bottle', [414, 89, 98, 251]), ('a bottle', [236, 354, 98, 251])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a bottle', [30, 30, 100, 200]), ('a bottle', [150, 30, 100, 200]), ('a bottle', [270, 30, 100, 200]), ('a bottle', [390, 30, 100, 200]), ('a bottle', [210, 250, 100, 200])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with five bowls": [
+        "[('a bowl', [50, 100, 100, 100]), ('a bowl', [180, 100, 100, 100]), ('a bowl', [310, 100, 100, 100]), ('a bowl', [120, 250, 100, 100]), ('a bowl', [250, 250, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a bowl', [47, 207, 97, 97]), ('a bowl', [171, 207, 97, 97]), ('a bowl', [295, 207, 97, 97]), ('a bowl', [419, 207, 97, 97]), ('a bowl', [243, 328, 97, 97])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with five cars": [
+        "[('a car', [25, 250, 100, 100]), ('a car', [150, 250, 100, 100]), ('a car', [275, 250, 100, 100]), ('a car', [400, 250, 100, 100]), ('a car', [225, 375, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a car', [20, 256, 100, 100]), ('a car', [140, 256, 100, 100]), ('a car', [260, 256, 100, 100]), ('a car', [380, 256, 100, 100]), ('a car', [200, 376, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with five cats": [
+        "[('a cat', [20, 20, 100, 100]), ('a cat', [140, 20, 100, 100]), ('a cat', [260, 20, 100, 100]), ('a cat', [380, 20, 100, 100]), ('a cat', [200, 140, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a cat', [20, 20, 100, 100]), ('a cat', [140, 20, 100, 100]), ('a cat', [260, 20, 100, 100]), ('a cat', [380, 20, 100, 100]), ('a cat', [200, 140, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with five chairs": [
+        "[('a chair', [20, 20, 100, 100]), ('a chair', [140, 20, 100, 100]), ('a chair', [260, 20, 100, 100]), ('a chair', [380, 20, 100, 100]), ('a chair', [500, 20, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a chair', [30, 30, 100, 100]), ('a chair', [150, 30, 100, 100]), ('a chair', [270, 30, 100, 100]), ('a chair', [390, 30, 100, 100]), ('a chair', [210, 150, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with five cups": [
+        "[('a cup', [50, 100, 100, 100]), ('a cup', [180, 100, 100, 100]), ('a cup', [310, 100, 100, 100]), ('a cup', [120, 250, 100, 100]), ('a cup', [250, 250, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a cup', [25, 200, 100, 100]), ('a cup', [150, 200, 100, 100]), ('a cup', [275, 200, 100, 100]), ('a cup', [400, 200, 100, 100]), ('a cup', [225, 325, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with five dogs": [
+        "[('a dog', [30, 30, 100, 100]), ('a dog', [150, 30, 100, 100]), ('a dog', [270, 30, 100, 100]), ('a dog', [390, 30, 100, 100]), ('a dog', [210, 150, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a dog', [32, 77, 114, 133]), ('a dog', [162, 77, 114, 133]), ('a dog', [292, 77, 114, 133]), ('a dog', [422, 77, 114, 133]), ('a dog', [252, 230, 114, 133])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with five laptops": [
+        "[('a laptop', [30, 30, 100, 100]), ('a laptop', [150, 30, 100, 100]), ('a laptop', [270, 30, 100, 100]), ('a laptop', [390, 30, 100, 100]), ('a laptop', [210, 150, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a laptop', [30, 30, 100, 100]), ('a laptop', [150, 30, 100, 100]), ('a laptop', [270, 30, 100, 100]), ('a laptop', [390, 30, 100, 100]), ('a laptop', [210, 150, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a blue dog and a white bowl": [
+        "[('a blue dog', [191, 181, 130, 162]), ('a white bowl', [198, 369, 116, 82])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a yellow book and a green cup": [
+        "[('a yellow book', [182, 192, 148, 128]), ('a green cup', [182, 342, 148, 128])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a blue book and an orange chair": [
+        "[('a blue book', [201, 190, 110, 132]), ('an orange chair', [73, 269, 167, 243])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a purple bowl and a blue dog": [
+        "[('a purple bowl', [193, 201, 126, 97]), ('a blue dog', [301, 272, 156, 134])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a green chair and a black bowl": [
+        "[('a green chair', [184, 196, 144, 216]), ('a black bowl', [190, 296, 128, 80])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a purple bottle and a black cat": [
+        "[('a purple bottle', [189, 210, 134, 202]), ('a black cat', [313, 226, 178, 186])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a black cat and an orange bowl": [
+        "[('a black cat', [188, 200, 136, 112]), ('an orange bowl', [222, 328, 68, 56])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a black book and a purple bowl": [
+        "[('a black book', [201, 201, 110, 110]), ('a purple bowl', [201, 321, 110, 110])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a pink cup and a brown chair": [
+        "[('a pink cup', [208, 207, 96, 105]), ('a brown chair', [99, 285, 314, 227])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a brown chair and a blue bottle": [
+        "[('a brown chair', [198, 206, 116, 206]), ('a blue bottle', [198, 84, 116, 122])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a yellow bowl and a pink cup": [
+        "[('a yellow bowl', [201, 197, 110, 97]), ('a pink cup', [303, 197, 97, 97])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a pink bowl and a gray book": [
+        "[('a pink bowl', [196, 204, 120, 120]), ('a gray book', [196, 332, 120, 120])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a gray cup and a purple laptop": [
+        "[('a gray cup', [194, 201, 124, 145]), ('a purple laptop', [63, 80, 385, 299])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a green bowl and a purple laptop": [
+        "[('a green bowl', [193, 208, 126, 92]), ('a purple laptop', [305, 297, 145, 97])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a green laptop and a gray cat": [
+        "[('a green laptop', [177, 207, 158, 98]), ('a gray cat', [286, 282, 133, 92])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a yellow dog and a pink cat": [
+        "[('a yellow dog', [205, 184, 176, 176]), ('a pink cat', [131, 240, 130, 130])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a pink cat and a yellow bowl": [
+        "[('a pink cat', [197, 183, 119, 118]), ('a yellow bowl', [200, 328, 112, 80])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a brown car and a yellow cat": [
+        "[('a brown car', [201, 283, 209, 160]), ('a yellow cat', [296, 42, 143, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a brown bowl and a white car": [
+        "[('a brown bowl', [187, 198, 138, 117]), ('a white car', [297, 317, 160, 96])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with an orange laptop and a brown dog": [
+        "[('an orange laptop', [208, 168, 96, 64]), ('a brown dog', [296, 312, 128, 128])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a brown cup and an orange bottle": [
+        "[('a brown cup', [201, 201, 110, 142]), ('an orange bottle', [201, 361, 110, 142])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a gray bowl and an orange backpack": [
+        "[('a gray bowl', [201, 210, 110, 100]), ('an orange backpack', [301, 209, 110, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a yellow car and an orange chair": [
+        "[('a yellow car', [202, 281, 211, 159]), ('an orange chair', [269, 283, 209, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a purple backpack and a brown cup": [
+        "[('a purple backpack', [181, 189, 150, 184]), ('a brown cup', [297, 245, 78, 83])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a gray dog and a blue backpack": [
+        "[('a gray dog', [182, 191, 147, 197]), ('a blue backpack', [337, 218, 122, 157])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a white laptop and an orange bottle": [
+        "[('a white laptop', [184, 190, 144, 92]), ('an orange bottle', [227, 294, 58, 96])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a brown dog and a blue chair": [
+        "[('a brown dog', [34, 90, 199, 210]), ('a blue chair', [276, 187, 166, 225])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a blue backpack and a yellow cat": [
+        "[('a blue backpack', [199, 201, 114, 141]), ('a yellow cat', [312, 234, 162, 157])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a gray book and a yellow laptop": [
+        "[('a gray book', [209, 198, 94, 116]), ('a yellow laptop', [305, 198, 116, 116])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a white cup and a black cat": [
+        "[('a white cup', [201, 191, 110, 135]), ('a black cat', [43, 120, 201, 191])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a red cat and a brown backpack": [
+        "[('a red cat', [200, 200, 100, 100]), ('a brown backpack', [300, 300, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a purple cup and a green car": [
+        "[('a purple cup', [199, 208, 114, 128]), ('a green car', [285, 281, 211, 159])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a gray cup and an orange backpack": [
+        "[('a gray cup', [199, 223, 114, 135]), ('an orange backpack', [297, 252, 144, 186])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a red chair and a gray cup": [
+        "[('a red chair', [90, 220, 150, 200]), ('a gray cup', [280, 250, 80, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a red bowl and a gray laptop": [
+        "[('a red bowl', [198, 190, 116, 91]), ('a gray laptop', [281, 285, 150, 94])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a purple bottle and a yellow cat": [
+        "[('a purple bottle', [201, 201, 110, 210]), ('a yellow cat', [201, 421, 110, 91])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a red dog and a gray laptop": [
+        "[('a red dog', [37, 71, 202, 223]), ('a gray laptop', [276, 200, 166, 166])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a brown laptop and a blue cat": [
+        "[('a brown laptop', [189, 202, 134, 94]), ('a blue cat', [305, 228, 162, 141])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a white laptop and a red chair": [
+        "[('a white laptop', [201, 207, 110, 98]), ('a red chair', [286, 318, 140, 194])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a yellow bottle and an orange chair": [
+        "[('a yellow bottle', [197, 232, 118, 180]), ('an orange chair', [309, 246, 160, 226])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a green car and a blue bottle": [
+        "[('a green car', [21, 281, 211, 159]), ('a blue bottle', [269, 283, 209, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a black cat and a brown cup": [
+        "[('a black cat', [187, 113, 138, 139]), ('a brown cup', [230, 266, 52, 72])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a purple backpack and a red chair": [
+        "[('a purple backpack', [198, 234, 118, 134]), ('a red chair', [303, 273, 129, 169])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a gray dog and a brown chair": [
+        "[('a gray dog', [193, 117, 126, 139]), ('a brown chair', [305, 267, 147, 176])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a black backpack and a brown dog": [
+        "[('a black backpack', [201, 198, 110, 133]), ('a brown dog', [57, 222, 179, 189])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a yellow book and a pink bowl": [
+        "[('a yellow book', [201, 201, 110, 110]), ('a pink bowl', [201, 321, 110, 110])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a gray book and a white chair": [
+        "[('a gray book', [201, 201, 110, 110]), ('a white chair', [201, 321, 110, 110])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a yellow backpack and an orange car": [
+        "[('a yellow backpack', [201, 247, 110, 142]), ('an orange car', [316, 283, 162, 115])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a black book and a brown car": [
+        "[('a black book', [206, 207, 100, 150]), ('a brown car', [306, 250, 150, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a white laptop and a red cat": [
+        "[('a white laptop', [181, 206, 150, 100]), ('a red cat', [297, 263, 150, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a white chair and a black book": [
+        "[('a white chair', [202, 200, 108, 112]), ('a black book', [202, 328, 108, 112])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a yellow book and a pink laptop": [
+        "[('a yellow book', [176, 181, 160, 150]), ('a pink laptop', [176, 342, 160, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a black car and an orange bottle": [
+        "[('a black car', [198, 276, 116, 74]), ('an orange bottle', [247, 399, 69, 92])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with an orange dog and a brown car": [
+        "[('an orange dog', [202, 240, 108, 90]), ('a brown car', [287, 296, 154, 105])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a gray book and a green bowl": [
+        "[('a gray book', [195, 197, 122, 118]), ('a green bowl', [195, 345, 122, 118])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a blue car and a red chair": [
+        "[('a blue car', [30, 250, 200, 120]), ('a red chair', [280, 280, 120, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a white cat and a black chair": [
+        "[('a white cat', [189, 98, 143, 134]), ('a black chair', [201, 257, 110, 147])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a green dog and a white chair": [
+        "[('a green dog', [202, 200, 108, 112]), ('a white chair', [297, 279, 120, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a blue book and a yellow bowl": [
+        "[('a blue book', [198, 204, 116, 146]), ('a yellow bowl', [198, 369, 116, 81])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a yellow dog and a blue bowl": [
+        "[('a yellow dog', [206, 190, 100, 100]), ('a blue bowl', [236, 290, 60, 40])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a brown laptop and a black chair": [
+        "[('a brown laptop', [182, 206, 148, 100]), ('a black chair', [186, 330, 140, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a brown laptop and a blue car": [
+        "[('a brown laptop', [199, 201, 114, 82]), ('a blue car', [297, 282, 194, 144])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a blue bottle and a red cup": [
+        "[('a blue bottle', [199, 194, 114, 198]), ('a red cup', [303, 207, 102, 169])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a purple laptop and a pink book": [
+        "[('a purple laptop', [193, 206, 126, 100]), ('a pink book', [197, 320, 117, 116])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a yellow bowl and a red car": [
+        "[('a yellow bowl', [193, 238, 126, 94]), ('a red car', [312, 285, 181, 109])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a green laptop and a yellow backpack": [
+        "[('a green laptop', [202, 221, 108, 70]), ('a yellow backpack', [304, 238, 123, 85])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a gray book and a red car": [
+        "[('a gray book', [200, 200, 112, 160]), ('a red car', [300, 300, 160, 80])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a red dog and a black book": [
+        "[('a red dog', [212, 173, 196, 245]), ('a black book', [132, 33, 248, 96])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a white car and an orange bottle": [
+        "[('a white car', [198, 285, 116, 157]), ('an orange bottle', [331, 219, 82, 97])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a green book and a black cup": [
+        "[('a green book', [199, 196, 114, 137]), ('a black cup', [288, 217, 82, 95])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a white bowl and a purple bottle": [
+        "[('a white bowl', [200, 200, 112, 112]), ('a purple bottle', [300, 300, 80, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a green bottle and a purple cat": [
+        "[('a green bottle', [201, 198, 110, 226]), ('a purple cat', [121, 72, 270, 266])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with an orange dog and a brown bowl": [
+        "[('an orange dog', [199, 206, 114, 119]), ('a brown bowl', [186, 364, 139, 90])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a blue backpack and a brown laptop": [
+        "[('a blue backpack', [198, 217, 116, 132]), ('a brown laptop', [331, 230, 139, 95])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a red backpack and a purple book": [
+        "[('a red backpack', [200, 200, 100, 150]), ('a purple book', [300, 250, 80, 120])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a purple bottle and a brown laptop": [
+        "[('a purple bottle', [201, 201, 110, 210]), ('a brown laptop', [201, 201, 110, 210])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a black chair and a blue book": [
+        "[('a black chair', [200, 200, 112, 112]), ('a blue book', [300, 300, 80, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a yellow dog and a black cup": [
+        "[('a yellow dog', [191, 149, 130, 146]), ('a black cup', [337, 222, 85, 98])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a green cup and a white book": [
+        "[('a green cup', [192, 192, 128, 128]), ('a white book', [192, 352, 128, 128])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a purple chair and a pink book": [
+        "[('a purple chair', [183, 179, 146, 201]), ('a pink book', [216, 23, 80, 131])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a purple cup and a red book": [
+        "[('a purple cup', [200, 200, 112, 144]), ('a red book', [300, 200, 112, 144])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a red cup and a yellow chair": [
+        "[('a red cup', [202, 216, 108, 132]), ('a yellow chair', [322, 256, 160, 256])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with an orange cat and a brown bottle": [
+        "[('an orange cat', [184, 167, 144, 145]), ('a brown bottle', [201, 333, 110, 139])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a gray cup and an orange book": [
+        "[('a gray cup', [198, 206, 116, 132]), ('an orange book', [195, 350, 122, 139])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a green laptop and a pink chair": [
+        "[('a green laptop', [198, 198, 116, 116]), ('a pink chair', [198, 364, 116, 116])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a white book and a pink backpack": [
+        "[('a white book', [174, 222, 164, 233]), ('a pink backpack', [342, 212, 132, 169])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a purple bowl and a gray dog": [
+        "[('a purple bowl', [201, 231, 110, 81]), ('a gray dog', [309, 220, 160, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a yellow bottle and a brown car": [
+        "[('a yellow bottle', [223, 202, 66, 142]), ('a brown car', [38, 287, 208, 153])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a brown chair and a green laptop": [
+        "[('a brown chair', [194, 200, 124, 204]), ('a green laptop', [336, 223, 132, 66])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a brown bowl and an orange chair": [
+        "[('a brown bowl', [197, 223, 118, 96]), ('an orange chair', [312, 271, 145, 182])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a white car and an orange chair": [
+        "[('a white car', [180, 280, 152, 96]), ('an orange chair', [320, 320, 96, 96])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a green cat and an orange car": [
+        "[('a green cat', [205, 213, 146, 132]), ('an orange car', [84, 281, 211, 159])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a brown cat and a red cup": [
+        "[('a brown cat', [197, 123, 170, 189]), ('a red cup', [331, 246, 81, 98])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a yellow laptop and a white cup": [
+        "[('a yellow laptop', [186, 192, 140, 112]), ('a white cup', [201, 336, 80, 96])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a blue car and a brown bowl": [
+        "[('a blue car', [201, 281, 211, 159]), ('a brown bowl', [150, 226, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a black bowl and an orange dog": [
+        "[('a black bowl', [194, 184, 124, 85]), ('an orange dog', [286, 273, 160, 132])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a black backpack and a red bowl": [
+        "[('a black backpack', [234, 197, 139, 189]), ('a red bowl', [131, 276, 114, 80])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a brown laptop and an orange book": [
+        "[('a brown laptop', [196, 202, 120, 80]), ('an orange book', [200, 300, 100, 120])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a red dog and a purple chair": [
+        "[('a red dog', [199, 201, 166, 180]), ('a purple chair', [315, 294, 144, 218])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a purple car and a white dog": [
+        "[('a purple car', [189, 281, 211, 159]), ('a white dog', [302, 119, 211, 228])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bottle on the left and a dog on the right": [
+        "[('a bottle', [21, 214, 141, 238]), ('a dog', [350, 158, 141, 238])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bowl on the right and a cat on the left": [
+        "[('a bowl', [361, 206, 151, 151]), ('a cat', [21, 67, 271, 324])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bottle on the top and a bowl on the bottom": [
+        "[('a bottle', [200, 50, 112, 200]), ('a bowl', [200, 262, 112, 200])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a chair on the bottom and a book on the top": [
+        "[('a chair', [0, 412, 512, 100]), ('a book', [0, 0, 512, 412])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bottle on the left and a laptop on the right": [
+        "[('a bottle', [39, 218, 137, 251]), ('a laptop', [336, 218, 137, 251])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a laptop on the right and a cat on the left": [
+        "[('a laptop', [296, 185, 196, 142]), ('a cat', [21, 197, 211, 158])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a laptop', [331, 189, 151, 132]), ('a cat', [25, 196, 174, 156])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a dog on the top and a bowl on the bottom": [
+        "[('a dog', [0, 0, 512, 512]), ('a bowl', [0, 0, 512, 512])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bottle on the bottom and a car on the top": [
+        "[('a bottle', [206, 455, 100, 57]), ('a car', [206, 0, 100, 57])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a car on the left and a book on the right": [
+        "[('a car', [21, 219, 211, 159]), ('a book', [269, 219, 209, 159])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a book on the right and a chair on the left": [
+        "[('a book', [354, 200, 158, 212]), ('a chair', [20, 230, 150, 282])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a car on the top and a laptop on the bottom": [
+        "[('a car', [0, 0, 512, 256]), ('a laptop', [0, 256, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a car', [0, 0, 512, 256]), ('a laptop', [0, 256, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cat on the bottom and a laptop on the top": [
+        "[('a cat', [0, 384, 512, 128]), ('a laptop', [0, 0, 512, 384])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cat on the left and a car on the right": [
+        "[('a cat', [21, 201, 211, 211]), ('a car', [269, 201, 209, 211])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bowl on the right and a dog on the left": [
+        "[('a bowl', [351, 201, 141, 110]), ('a dog', [21, 166, 244, 346])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a backpack on the top and a cat on the bottom": [
+        "[('a backpack', [0, 0, 512, 256]), ('a cat', [0, 256, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a car on the bottom and a laptop on the top": [
+        "[('a car', [0, 352, 512, 160]), ('a laptop', [0, 0, 512, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bowl on the left and a dog on the right": [
+        "[('a bowl', [21, 201, 166, 166]), ('a dog', [325, 135, 166, 231])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a chair on the right and a bowl on the left": [
+        "[('a chair', [350, 200, 150, 200]), ('a bowl', [50, 200, 150, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a dog on the top and a cup on the bottom": [
+        "[('a dog', [0, 0, 512, 256]), ('a cup', [0, 256, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cup on the bottom and a car on the top": [
+        "[('a cup', [200, 400, 112, 112]), ('a car', [200, 0, 112, 112])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a laptop on the left and a cat on the right": [
+        "[('a laptop', [21, 208, 211, 158]), ('a cat', [269, 208, 209, 158])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bottle on the right and a cat on the left": [
+        "[('a bottle', [361, 216, 151, 246]), ('a cat', [20, 137, 267, 375])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a backpack on the top and a bowl on the bottom": [
+        "[('a backpack', [0, 0, 512, 256]), ('a bowl', [0, 256, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a backpack', [0, 0, 512, 256]), ('a bowl', [0, 256, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a dog on the bottom and a car on the top": [
+        "[('a dog', [0, 384, 512, 128]), ('a car', [0, 0, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a dog', [0, 384, 512, 128]), ('a car', [0, 0, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a dog', [0, 384, 512, 128]), ('a car', [0, 0, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a dog on the left and a book on the right": [
+        "[('a dog', [21, 201, 211, 211]), ('a book', [269, 201, 211, 211])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cat on the right and a bowl on the left": [
+        "[('a cat', [321, 178, 191, 334]), ('a bowl', [21, 222, 176, 176])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a cat', [343, 156, 149, 187]), ('a bowl', [20, 201, 141, 97])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a cat', [358, 150, 154, 204]), ('a bowl', [24, 176, 134, 104])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a backpack on the top and a laptop on the bottom": [
+        "[('a backpack', [0, 0, 512, 256]), ('a laptop', [0, 256, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a chair on the bottom and a cup on the top": [
+        "[('a chair', [0, 384, 512, 128]), ('a cup', [0, 0, 512, 128])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a dog on the left and a cat on the right": [
+        "[('a dog', [21, 196, 211, 211]), ('a cat', [280, 196, 211, 211])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a book on the right and a bowl on the left": [
+        "[('a book', [322, 201, 170, 248]), ('a bowl', [20, 201, 170, 248])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bottle on the top and a car on the bottom": [
+        "[('a bottle', [200, 20, 112, 200]), ('a car', [200, 312, 112, 180])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a laptop on the bottom and a cat on the top": [
+        "[('a laptop', [0, 384, 512, 128]), ('a cat', [0, 0, 512, 384])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a dog on the left and a chair on the right": [
+        "[('a dog', [21, 199, 211, 213]), ('a chair', [269, 199, 209, 213])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cup on the right and a chair on the left": [
+        "[('a cup', [369, 209, 80, 100]), ('a chair', [63, 257, 130, 255])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a chair on the top and a cup on the bottom": [
+        "[('a chair', [0, 0, 512, 256]), ('a cup', [0, 256, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a chair', [0, 0, 512, 256]), ('a cup', [0, 256, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a backpack on the bottom and a laptop on the top": [
+        "[('a backpack', [0, 384, 512, 128]), ('a laptop', [0, 0, 512, 128])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a dog on the left and a car on the right": [
+        "[('a dog', [21, 198, 211, 211]), ('a car', [269, 198, 209, 211])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a chair on the right and a bottle on the left": [
+        "[('a chair', [358, 201, 154, 311]), ('a bottle', [29, 202, 131, 309])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a book on the top and a cup on the bottom": [
+        "[('a book', [200, 50, 112, 160]), ('a cup', [200, 302, 112, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a laptop on the bottom and a car on the top": [
+        "[('a laptop', [200, 400, 112, 64]), ('a car', [200, 48, 112, 64])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a dog on the left and a bottle on the right": [
+        "[('a dog', [21, 202, 211, 210]), ('a bottle', [269, 202, 209, 210])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a book on the top and a chair on the bottom": [
+        "[('a book', [200, 50, 112, 150]), ('a chair', [200, 362, 112, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a backpack on the bottom and a cup on the top": [
+        "[('a backpack', [0, 384, 128, 128]), ('a cup', [192, 0, 128, 128])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a backpack', [0, 384, 128, 128]), ('a cup', [192, 0, 128, 128])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cup on the left and a dog on the right": [
+        "[('a cup', [25, 224, 118, 160]), ('a dog', [369, 181, 118, 203])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bowl on the right and a book on the left": [
+        "[('a bowl', [361, 209, 151, 151]), ('a book', [0, 209, 151, 151])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bottle on the top and a dog on the bottom": [
+        "[('a bottle', [206, 0, 100, 200]), ('a dog', [206, 312, 100, 200])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cat on the bottom and a cup on the top": [
+        "[('a cat', [0, 384, 512, 128]), ('a cup', [0, 0, 512, 128])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cat on the left and a dog on the right": [
+        "[('a cat', [21, 201, 211, 211]), ('a dog', [269, 201, 211, 211])]\nBackground prompt: A realistic scene\nNegative prompt: ",
+        "[('a cat', [21, 206, 211, 211]), ('a dog', [280, 206, 211, 211])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a chair on the right and a backpack on the left": [
+        "[('a chair', [345, 206, 157, 306]), ('a backpack', [20, 191, 150, 180])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cup on the top and a backpack on the bottom": [
+        "[('a cup', [198, 51, 116, 123]), ('a backpack', [198, 338, 116, 123])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bowl on the left and a cat on the right": [
+        "[('a bowl', [20, 200, 150, 150]), ('a cat', [342, 150, 150, 200])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a laptop on the right and a dog on the left": [
+        "[('a laptop', [269, 198, 243, 243]), ('a dog', [21, 161, 211, 280])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cup on the bottom and a laptop on the top": [
+        "[('a cup', [200, 400, 112, 112]), ('a laptop', [200, 0, 112, 112])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bowl on the left and a laptop on the right": [
+        "[('a bowl', [26, 201, 172, 136]), ('a laptop', [314, 198, 172, 136])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bottle on the top and a cup on the bottom": [
+        "[('a bottle', [202, 29, 108, 232]), ('a cup', [202, 281, 108, 232])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a chair on the bottom and a bottle on the top": [
+        "[('a chair', [0, 412, 512, 100]), ('a bottle', [206, 0, 100, 412])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bottle on the left and a chair on the right": [
+        "[('a bottle', [21, 201, 104, 194]), ('a chair', [388, 171, 103, 251])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a dog on the right and a cat on the left": [
+        "[('a dog', [269, 206, 243, 306]), ('a cat', [21, 206, 243, 306])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bowl on the top and a car on the bottom": [
+        "[('a bowl', [200, 50, 112, 112]), ('a car', [200, 350, 112, 112])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bowl on the bottom and a chair on the top": [
+        "[('a bowl', [0, 384, 512, 128]), ('a chair', [0, 0, 512, 384])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a chair on the left and a bottle on the right": [
+        "[('a chair', [0, 256, 256, 256]), ('a bottle', [256, 256, 256, 256])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a book on the top and a dog on the bottom": [
+        "[('a book', [200, 50, 112, 150]), ('a dog', [200, 312, 112, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a chair on the bottom and a bowl on the top": [
+        "[('a chair', [0, 412, 512, 100]), ('a bowl', [206, 0, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cup on the left and a bottle on the right": [
+        "[('a cup', [20, 246, 150, 150]), ('a bottle', [342, 246, 150, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a car on the right and a cat on the left": [
+        "[('a car', [269, 281, 211, 159]), ('a cat', [21, 283, 209, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a backpack on the top and a cup on the bottom": [
+        "[('a backpack', [196, 0, 120, 120]), ('a cup', [196, 392, 120, 120])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a dog on the bottom and a bowl on the top": [
+        "[('a dog', [0, 384, 512, 128]), ('a bowl', [0, 0, 512, 128])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cup on the left and a laptop on the right": [
+        "[('a cup', [40, 222, 98, 115]), ('a laptop', [374, 216, 98, 115])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bowl on the right and a car on the left": [
+        "[('a bowl', [358, 201, 154, 154]), ('a car', [21, 281, 211, 159])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bottle on the top and a backpack on the bottom": [
+        "[('a bottle', [201, 19, 110, 227]), ('a backpack', [199, 285, 114, 202])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bowl on the bottom and a cup on the top": [
+        "[('a bowl', [0, 384, 512, 128]), ('a cup', [0, 0, 512, 128])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a book on the left and a cup on the right": [
+        "[('a book', [20, 216, 232, 280]), ('a cup', [260, 216, 232, 280])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a car on the right and a laptop on the left": [
+        "[('a car', [343, 208, 169, 137]), ('a laptop', [20, 226, 100, 100])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a laptop on the bottom and a bottle on the top": [
+        "[('a laptop', [0, 384, 512, 128]), ('a bottle', [0, 0, 512, 128])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cup on the left and a book on the right": [
+        "[('a cup', [21, 216, 150, 150]), ('a book', [341, 216, 150, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cup on the right and a bottle on the left": [
+        "[('a cup', [369, 207, 103, 147]), ('a bottle', [40, 207, 103, 147])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a backpack on the top and a dog on the bottom": [
+        "[('a backpack', [0, 0, 512, 256]), ('a dog', [0, 256, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a book on the left and a bottle on the right": [
+        "[('a book', [20, 206, 230, 286]), ('a bottle', [262, 206, 230, 286])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bowl on the right and a backpack on the left": [
+        "[('a bowl', [306, 209, 123, 123]), ('a backpack', [62, 196, 171, 171])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a book on the top and a bottle on the bottom": [
+        "[('a book', [200, 50, 112, 160]), ('a bottle', [200, 302, 112, 160])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a book on the bottom and a car on the top": [
+        "[('a book', [0, 384, 512, 128]), ('a car', [0, 0, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a bottle on the left and a book on the right": [
+        "[('a bottle', [33, 219, 176, 257]), ('a book', [303, 202, 176, 257])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cup on the right and a bowl on the left": [
+        "[('a cup', [342, 222, 150, 150]), ('a bowl', [20, 222, 150, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cup on the bottom and a backpack on the top": [
+        "[('a cup', [202, 404, 108, 108]), ('a backpack', [202, 0, 108, 108])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a backpack on the right and a cup on the left": [
+        "[('a backpack', [350, 200, 100, 150]), ('a cup', [50, 200, 100, 150])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a cup on the top and a dog on the bottom": [
+        "[('a cup', [200, 50, 112, 112]), ('a dog', [200, 350, 112, 112])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a backpack on the bottom and a chair on the top": [
+        "[('a backpack', [0, 384, 128, 128]), ('a chair', [192, 0, 128, 128])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a laptop on the left and a car on the right": [
+        "[('a laptop', [21, 204, 212, 212]), ('a car', [279, 281, 209, 159])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a dog on the right and a backpack on the left": [
+        "[('a dog', [297, 201, 214, 311]), ('a backpack', [21, 201, 214, 311])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ],
+    "A realistic photo of a scene with a dog on the top and a chair on the bottom": [
+        "[('a dog', [0, 0, 512, 256]), ('a chair', [0, 256, 512, 256])]\nBackground prompt: A realistic scene\nNegative prompt: "
+    ]
+}

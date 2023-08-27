@@ -8,7 +8,12 @@ import numpy as np
 from utils.latents import get_unscaled_latents, get_scaled_latents, blend_latents
 from utils import torch_device
 
-def load_sd(key="runwayml/stable-diffusion-v1-5", use_fp16=False, load_inverse_scheduler=True):
+# This is to be set in the `generate.py`
+sd_key = ""
+sd_version = ""
+model_dict = None
+
+def load_sd(key="runwayml/stable-diffusion-v1-5", use_fp16=False, load_inverse_scheduler=False, use_dpm_multistep_scheduler=False, scheduler_cls=None):
     """
     Keys:
      key = "CompVis/stable-diffusion-v1-4"
@@ -17,11 +22,12 @@ def load_sd(key="runwayml/stable-diffusion-v1-5", use_fp16=False, load_inverse_s
      
     Unpack with:
     ```
-    model_dict = load_sd(key=key, use_fp16=use_fp16)
+    model_dict = load_sd(key=key, use_fp16=use_fp16, **models.model_kwargs)
     vae, tokenizer, text_encoder, unet, scheduler, dtype = model_dict.vae, model_dict.tokenizer, model_dict.text_encoder, model_dict.unet, model_dict.scheduler, model_dict.dtype
     ```
     
     use_fp16: fp16 might have degraded performance
+    use_dpm_multistep_scheduler: DPMSolverMultistepScheduler
     """
     
     # run final results in fp32
@@ -36,10 +42,17 @@ def load_sd(key="runwayml/stable-diffusion-v1-5", use_fp16=False, load_inverse_s
     tokenizer = CLIPTokenizer.from_pretrained(key, subfolder="tokenizer", revision=revision, torch_dtype=dtype)
     text_encoder = CLIPTextModel.from_pretrained(key, subfolder="text_encoder", revision=revision, torch_dtype=dtype).to(torch_device)
     unet = UNet2DConditionModel.from_pretrained(key, subfolder="unet", revision=revision, torch_dtype=dtype).to(torch_device)
-    dpm_scheduler = DPMSolverMultistepScheduler.from_pretrained(key, subfolder="scheduler", revision=revision, torch_dtype=dtype)
-    scheduler = DDIMScheduler.from_pretrained(key, subfolder="scheduler", revision=revision, torch_dtype=dtype)
+    if scheduler_cls is None: # Default setting (for compatibility)
+        if use_dpm_multistep_scheduler:
+            scheduler = DPMSolverMultistepScheduler.from_pretrained(key, subfolder="scheduler", revision=revision, torch_dtype=dtype)
+        else:
+            scheduler = DDIMScheduler.from_pretrained(key, subfolder="scheduler", revision=revision, torch_dtype=dtype)
+    else:
+        print("Using scheduler:", scheduler_cls)
+        assert not use_dpm_multistep_scheduler, "`use_dpm_multistep_scheduler` cannot be used with `scheduler_cls`"
+        scheduler = scheduler_cls.from_pretrained(key, subfolder="scheduler", revision=revision, torch_dtype=dtype)
 
-    model_dict = EasyDict(vae=vae, tokenizer=tokenizer, text_encoder=text_encoder, unet=unet, scheduler=scheduler, dpm_scheduler=dpm_scheduler, dtype=dtype)
+    model_dict = EasyDict(vae=vae, tokenizer=tokenizer, text_encoder=text_encoder, unet=unet, scheduler=scheduler, dtype=dtype)
     
     if load_inverse_scheduler:
         inverse_scheduler = DDIMInverseScheduler.from_config(scheduler.config)

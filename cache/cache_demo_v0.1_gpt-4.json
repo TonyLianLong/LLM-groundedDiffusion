@@ -1,0 +1,11 @@
+{
+    "In an indoor scene, a blue cube directly above a red cube with a vase on the left of them": [
+        "[('a blue cube', [202, 120, 110, 110]), ('a red cube', [202, 230, 110, 110]), ('a vase', [62, 190, 80, 150])]\nBackground prompt: An indoor scene\nNegative prompt: "
+    ],
+    "A realistic photo of a wooden table without bananas in an indoor scene": [
+        "[('a wooden table', [65, 243, 344, 206])]\nBackground prompt: A realistic photo of an indoor scene\nNegative prompt: bananas"
+    ],
+    "A realistic image of a white deer and a gray bear in an empty factory scene": [
+        "[('a white deer', [74, 177, 183, 235]), ('a gray bear', [314, 193, 189, 216])]\nBackground prompt: A realistic image of an empty factory scene\nNegative prompt: "
+    ]
+}
