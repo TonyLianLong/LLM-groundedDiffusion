@@ -9,9 +9,11 @@
 ![Visualizations: Enhanced Prompt Understanding](https://llm-grounded-diffusion.github.io/visualizations.jpg)
 
 ## Updates
+**Our repo now supports using SDXL for high-quality generation with SDXL Refiner! Simply add `--sdxl` to generation command to use it.** You can also use `--sdxl-step-ratio` to control the strength of the refinement (use `0.5` for stronger refinement and `0.1` for weaker refinement). **See examples above.**
+
 **Our repo has been largely improved: now we have a repo with many methods implemented, including our training-free LMD and LMD+ (LMD with GLIGEN adapters).**
 
-**Our huggingface WebUI demo for stage 1 and 2 is updated: now we support enabling each of the guidance components to get a taste of contributions! [Check it out here](https://huggingface.co/spaces/longlian/llm-grounded-diffusion).**
+Our huggingface WebUI demo for stage 1 and 2 is updated: now we support enabling each of the guidance components to get a taste of contributions! [Check it out here](https://huggingface.co/spaces/longlian/llm-grounded-diffusion).
 
 Our WebUI is also available to run locally. [The instructions to run our WebUI locally to get faster generation without queues are here](webui/README.md).
 
@@ -28,6 +30,7 @@ These methods can be freely combined with our proposed LLM-based box-to-layout m
 Feel free to contact me / submit a pull request to add your methods!
 
 ## Our repo's features
+* **(New) Supports SDXL refiner for high-resolution high-quality generation**
 * **Both web-based ChatGPT and OpenAI API on GPT-3.5/4 supported**: Allows generating bounding boxes by either asking ChatGPT yourself (free) or in batch with OpenAI API (fully automated).
 * **LLM queries are cached to save $$$ on LLM APIs:** we cache each LLM query for layout generation so it does not re-generate the layouts from the same prompt.
 * **Open-source LLMs supported!**: Host LLMs yourself for more freedom and lower costs! We support Vicuna, LLaMA 2, StableBeluga2, etc. More in [FAQ](#FAQ).

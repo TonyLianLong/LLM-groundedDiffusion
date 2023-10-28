@@ -12,6 +12,7 @@ import time
 import diffusers
 from models import sam
 import argparse
+import generation.sdxl_refinement as sdxl
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--save-suffix", default=None, type=str)
@@ -46,6 +47,9 @@ parser.add_argument("--no-continue-on-error", action="store_true")
 parser.add_argument("--prompt-type", choices=prompt_types, default="lmd")
 parser.add_argument("--template_version", choices=template_versions, required=True)
 parser.add_argument("--dry-run", action="store_true", help="skip the generation")
+
+parser.add_argument("--sdxl", action="store_true", help="Enable sdxl.")
+parser.add_argument("--sdxl-step-ratio", type=float, default=0.3, help="SDXL step ratio: the higher the stronger the refinement.")
 
 float_args = [
     "frozen_step_ratio",
@@ -182,6 +186,9 @@ seed_offset = args.seed_offset
 
 base_save_dir = f"img_generations/img_generations_template{args.template_version}_{version}_{prompt_type}{save_suffix}"
 
+if args.sdxl:
+    base_save_dir += f"_sdxl_{args.sdxl_step_ratio}"
+
 run_kwargs = {}
 
 argnames = float_args + int_args + str_args
@@ -212,9 +219,14 @@ else:
 
 print(f"Save dir: {save_dir}")
 
+if args.sdxl:
+    # Offload model saves GPU memory.
+    sdxl.init(offload_model=True)
+
 LARGE_CONSTANT = 123456789
 LARGE_CONSTANT2 = 56789
 LARGE_CONSTANT3 = 6789
+LARGE_CONSTANT4 = 7890
 
 ind = 0
 if args.regenerate > 1:
@@ -366,7 +378,12 @@ for regenerate_ind in range(args.regenerate):
                             **run_kwargs,
                         )
 
-                    vis.display(output.image, "img", repeat_ind, save_ind_in_filename=False)
+                    output = output.image
+
+                    if args.sdxl:
+                        output = sdxl.refine(image=output, spec=spec, refine_seed=original_ind_base + ind_offset + LARGE_CONSTANT4, refinement_step_ratio=args.sdxl_step_ratio)
+
+                    vis.display(output, "img", repeat_ind, save_ind_in_filename=False)
 
             except (KeyboardInterrupt, bdb.BdbQuit) as e:
                 print(e)
