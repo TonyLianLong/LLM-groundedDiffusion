@@ -9,13 +9,13 @@
 ![Visualizations: Enhanced Prompt Understanding](https://llm-grounded-diffusion.github.io/visualizations.jpg)
 
 ## Updates
-**Our repo now supports using SDXL for high-quality generation with SDXL Refiner! Simply add `--sdxl` to generation command to use it.** You can also use `--sdxl-step-ratio` to control the strength of the refinement (use `0.5` for stronger refinement and `0.1` for weaker refinement). **See examples above.**
+**[2023.10]** **Our repo now supports using SDXL for high-quality generation with SDXL Refiner! Simply add `--sdxl` to generation command to use it.** You can also use `--sdxl-step-ratio` to control the strength of the refinement (use `0.5` for stronger refinement and `0.1` for weaker refinement). **See examples above.**
 
-**Please also check out our new work <a href='https://llm-grounded-video-diffusion.github.io/'>LLM-grounded Video Diffusion Models (LVD)</a>, which shows that LLMs have knowledge in their weights that can ground video diffusion models 🔥🔥🔥!**
+**[2023.10]** **Please also check out our new work <a href='https://llm-grounded-video-diffusion.github.io/'>LLM-grounded Video Diffusion Models (LVD)</a>, which shows that LLMs have knowledge in their weights that can ground video diffusion models 🔥🔥🔥!**
 
-**Our repo has been largely improved: now we have a repo with many methods implemented, including our training-free LMD and LMD+ (LMD with GLIGEN adapters).**
+**[2023.8]** **Our repo has been largely improved: now we have a repo with many methods implemented, including our training-free LMD and LMD+ (LMD with GLIGEN adapters).**
 
-Our huggingface WebUI demo for stage 1 and 2 is updated: now we support enabling each of the guidance components to get a taste of contributions! [Check it out here](https://huggingface.co/spaces/longlian/llm-grounded-diffusion).
+**[2023.6]** Our huggingface WebUI demo for stage 1 and 2 is updated: now we support enabling each of the guidance components to get a taste of contributions! [Check it out here](https://huggingface.co/spaces/longlian/llm-grounded-diffusion).
 
 Our WebUI is also available to run locally. [The instructions to run our WebUI locally to get faster generation without queues are here](webui/README.md).
 
