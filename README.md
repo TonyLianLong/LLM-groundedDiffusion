@@ -9,6 +9,8 @@
 ![Visualizations: Enhanced Prompt Understanding](https://llm-grounded-diffusion.github.io/visualizations.jpg)
 
 ## Updates
+**[2023.11]** **Our LLM-grounded Diffusion (LMD+) has been officially integrated to upstream diffusers!** It is supported in the `main` branch of `diffusers` (please install via `pip install git+https://github.com/huggingface/diffusers.git` before they make a new release). See more details and examples [here](https://github.com/huggingface/diffusers/blob/main/examples/community/README.md#llm-grounded-diffusion). The implementation in upstream `diffusers` is a simplified LMD+, and we recommend using the current full repo to reproduce our results.
+
 **[2023.10]** **Our repo now supports using SDXL for high-quality generation with SDXL Refiner! Simply add `--sdxl` to generation command to use it.** You can also use `--sdxl-step-ratio` to control the strength of the refinement (use `0.5` for stronger refinement and `0.1` for weaker refinement). **See examples above.**
 
 **[2023.10]** **Please also check out our new work <a href='https://llm-grounded-video-diffusion.github.io/'>LLM-grounded Video Diffusion Models (LVD)</a>, which shows that LLMs have knowledge in their weights that can ground video diffusion models 🔥🔥🔥!**
