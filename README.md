@@ -9,7 +9,51 @@
 ![Visualizations: Enhanced Prompt Understanding](https://llm-grounded-diffusion.github.io/visualizations.jpg)
 
 ## Updates
-**[2023.11]** **Our LLM-grounded Diffusion (LMD+) has been officially integrated to upstream diffusers!** It is supported in the `main` branch of `diffusers` (please install via `pip install git+https://github.com/huggingface/diffusers.git` before they make a new release). See more details and examples [here](https://github.com/huggingface/diffusers/blob/main/examples/community/README.md#llm-grounded-diffusion) ([example colab](https://colab.research.google.com/drive/1SXzMSeAB-LJYISb2yrUOdypLz4OYWUKj)). The implementation in upstream `diffusers` is a simplified LMD+, and we recommend using the current full repo to reproduce our results.
+**[2023.11]** **Our LLM-grounded Diffusion (LMD+) has been officially integrated to upstream diffusers v0.24.0!** This is an [example colab](https://colab.research.google.com/drive/1SXzMSeAB-LJYISb2yrUOdypLz4OYWUKj) that shows using our pipeline with official `diffusers`. The implementation in upstream `diffusers` is a simplified LMD+, and we recommend using the current full repo to reproduce our results.
+
+<details>
+  <summary>Using our pipeline with only a few lines of code with official diffusers</summary>
+
+```python
+# Requires diffusers >= 0.24.0
+
+import torch
+from diffusers import DiffusionPipeline
+
+pipe = DiffusionPipeline.from_pretrained(
+    "longlian/lmd_plus",
+    custom_pipeline="llm_grounded_diffusion",
+    custom_revision="main",
+    variant="fp16", torch_dtype=torch.float16
+)
+pipe.enable_model_cpu_offload()
+
+# An example prompt with LLM response
+prompt = "a waterfall and a modern high speed train in a beautiful forest with fall foliage"
+llm_response = """
+[('a waterfall', [71, 105, 148, 258]), ('a modern high speed train', [255, 223, 181, 149])]
+Background prompt: A beautiful forest with fall foliage
+Negative prompt:
+"""
+
+phrases, boxes, bg_prompt, neg_prompt = pipe.parse_llm_response(llm_response)
+
+# Use `LLMGroundedDiffusionPipeline` to generate an image
+images = pipe(
+    prompt=prompt,
+    negative_prompt=neg_prompt,
+    phrases=phrases,
+    boxes=boxes,
+    gligen_scheduled_sampling_beta=0.4,
+    output_type="pil",
+    num_inference_steps=50,
+    lmd_guidance_kwargs={}
+).images
+
+# PIL Image:
+images[0]
+```
+</details>
 
 **[2023.10]** **Our repo now supports using SDXL for high-quality generation with SDXL Refiner! Simply add `--sdxl` to generation command to use it.** You can also use `--sdxl-step-ratio` to control the strength of the refinement (use `0.5` for stronger refinement and `0.1` for weaker refinement). **See examples above.**
 
