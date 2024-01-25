@@ -9,6 +9,8 @@
 ![Visualizations: Enhanced Prompt Understanding](https://llm-grounded-diffusion.github.io/visualizations.jpg)
 
 ## Updates
+**[2024.1]** Added a result with self-hosted Mixtral-8x7B-Instruct-v0.1 (see [our reference benchmark results](#our-reference-benchmark-results) section). **Surprisingly, the Mixtral model's performance is comparable with GPT-3.5.** This shows that it's possible to self-host LMD/LMD+ without external API calls to LLMs to achieve good results.
+
 **[2023.11]** **Our LLM-grounded Diffusion (LMD+) has been officially integrated to upstream diffusers v0.24.0!** This is an [example colab](https://colab.research.google.com/drive/1SXzMSeAB-LJYISb2yrUOdypLz4OYWUKj) that shows using our pipeline with official `diffusers`. The implementation in upstream `diffusers` is a simplified LMD+, and we recommend using the current full repo to reproduce our results.
 
 <details>
@@ -197,8 +199,9 @@ python scripts/owl_vit_eval.py --model gpt-4 --run_base_path img_generations/img
 | LMD+ (GPT-3.5)        | 100      | 86       | 69          | 67      | 80.5%     |
 | LMD+ (GPT-4)          | 100      | 84       | 79          | 82      | **86.3%** |
 | LMD+ (StableBeluga2*) | 88       | 60       | 56          | 64      | 67.0%     |
+| LMD+ (Mixtral-8x7B-Instruct-v0.1*) | 97       | 71       | 77          | 81      | 81.0%     |
 
-\* [StableBeluga2](https://huggingface.co/stabilityai/StableBeluga2) is an open-sourced model based on Llama 2. We discover that the fact that LLMs' spatial reasoning ability is also applicable to open-sourced models. However, it can still be improved, compared to proprietary models. We leave LLM fine-tuning for better layout generation in stage 1 to future research.
+\* [StableBeluga2](https://huggingface.co/stabilityai/StableBeluga2) is an open-sourced model based on Llama 2. [Mixtral-8x7B-Instruct-v0.1](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1) is an open-sourced MoE model that can be served on 1x A100 if quantized. We discover that the fact that LLMs' spatial reasoning ability is also applicable to open-sourced models. **Surprisingly, the Mixtral model's performance is comparable with GPT-3.5.** This shows that it's possible to self-host LMD/LMD+ without external API calls to LLMs to achieve good results. However, it can still be improved, compared to proprietary model GPT-4. We leave LLM fine-tuning for better layout generation in stage 1 to future research.
 
 To run generation with LMD with original SD weights and evaluate the generation:
 <details>
@@ -262,7 +265,7 @@ The stage 1 in this table is LMD (GPT-3.5) unless stated otherwise. We keep stag
 \*\* Note that LMD+ uses attention control that we proposed **in addition to** GLIGEN, which has much better generation compared to using only GLIGEN, showing that **our proposed training-free control is orthogonal to training-based methods such as GLIGEN**.
 
 ## FAQs
-### How do I use open-source LLMs (e.g., LLaMA-2, StableBeluga2, Vicuna)?
+### How do I use open-source LLMs (e.g., Mixtral, LLaMA-2, StableBeluga2, Vicuna)?
 You can install [fastchat](https://github.com/lm-sys/FastChat) and start a LLM server (note that the server does not have to be the same one as this repo). Using StableBeluga2 as an example (which performs the best among all open-source LLMs from our experience):
 
 ```shell
@@ -273,7 +276,7 @@ python3 -m fastchat.serve.controller
 CUDA_VISIBLE_DEVICES=0,1 python3 -m fastchat.serve.cli --model-path stabilityai/StableBeluga2 --num-gpus 2
 python3 -m fastchat.serve.openai_api_server --host localhost --port 8000
 ```
-StableBeluga2 is a 70b model so you need at least 2 GPUs, but you can run smaller models with only 1 GPU. Simply replace the model path to the huggingface model key (e.g., `meta-llama/Llama-2-70b-hf`, `lmsys/vicuna-33b-v1.3`). Note that you probably want models without RLHF (e.g., not `Llama-2-70b-chat-hf`), as we use text completion endpoints for layout generation. Then change the `--model` argument to the intended model.
+StableBeluga2 is a 70b model so you need at least 2 GPUs, but you can run smaller models with only 1 GPU. Simply replace the model path to the huggingface model key (e.g., `meta-llama/Llama-2-70b-hf`, `lmsys/vicuna-33b-v1.3`). Note that you probably want models without RLHF (e.g., not `Llama-2-70b-chat-hf`), as we use text completion endpoints for layout generation, although Mixtral with instruction tuning seems to perform slightly better than Mixtral without instruction tuning. Then change the `--model` argument to the intended model.
 
 If your LLM server is not on `localhost:8000`, you can change the API endpoint URL in [utils/llm.py](https://github.com/TonyLianLong/LLM-groundedDiffusion/blob/main/utils/llm.py). If you model name is not in the list in [utils/llm.py](https://github.com/TonyLianLong/LLM-groundedDiffusion/blob/main/utils/llm.py), you can add it to the `model_names` list. We created this list to prevent typos in the command.
 
