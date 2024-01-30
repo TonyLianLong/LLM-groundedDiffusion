@@ -276,9 +276,9 @@ export FASTCHAT_WORKER_API_TIMEOUT=600
 python3 -m fastchat.serve.controller
 
 # Run this in window 2
-CUDA_VISIBLE_DEVICES=0,1 python3 -m fastchat.serve.cli --model-path mistralai/Mixtral-8x7B-Instruct-v0.1 --num-gpus 2 --max-gpu-memory 48GiB
+CUDA_VISIBLE_DEVICES=0,1 python3 -m fastchat.serve.model_worker --model-path mistralai/Mixtral-8x7B-Instruct-v0.1 --num-gpus 2 --max-gpu-memory 48GiB
 # Command for StableBeluga2:
-# CUDA_VISIBLE_DEVICES=0,1 python3 -m fastchat.serve.cli --model-path stabilityai/StableBeluga2 --num-gpus 2
+# CUDA_VISIBLE_DEVICES=0,1 python3 -m fastchat.serve.model_worker --model-path stabilityai/StableBeluga2 --num-gpus 2
 
 # Run this in window 3
 python3 -m fastchat.serve.openai_api_server --host localhost --port 8000
