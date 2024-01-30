@@ -266,17 +266,24 @@ The stage 1 in this table is LMD (GPT-3.5) unless stated otherwise. We keep stag
 
 ## FAQs
 ### How do I use open-source LLMs (e.g., Mixtral, LLaMA-2, StableBeluga2, Vicuna)?
-You can install [fastchat](https://github.com/lm-sys/FastChat) and start a LLM server (note that the server does not have to be the same one as this repo). Using StableBeluga2 as an example (which performs the best among all open-source LLMs from our experience):
+You can install [fastchat](https://github.com/lm-sys/FastChat) and start a LLM server (note that the server does not have to be the same one as this repo). This requires running three terminals (e.g., three tmux windows). Using Mixtral-8x7B-Instruct-v0.1 as an example (which performs the best among all open-source LLMs from our experience):
 
 ```shell
 pip install fschat
 
 export FASTCHAT_WORKER_API_TIMEOUT=600
+# Run this in window 1
 python3 -m fastchat.serve.controller
-CUDA_VISIBLE_DEVICES=0,1 python3 -m fastchat.serve.cli --model-path stabilityai/StableBeluga2 --num-gpus 2
+
+# Run this in window 2
+CUDA_VISIBLE_DEVICES=0,1 python3 -m fastchat.serve.cli --model-path mistralai/Mixtral-8x7B-Instruct-v0.1 --num-gpus 2 --max-gpu-memory 48GiB
+# Command for StableBeluga2:
+# CUDA_VISIBLE_DEVICES=0,1 python3 -m fastchat.serve.cli --model-path stabilityai/StableBeluga2 --num-gpus 2
+
+# Run this in window 3
 python3 -m fastchat.serve.openai_api_server --host localhost --port 8000
 ```
-StableBeluga2 is a 70b model so you need at least 2 GPUs, but you can run smaller models with only 1 GPU. Simply replace the model path to the huggingface model key (e.g., `meta-llama/Llama-2-70b-hf`, `lmsys/vicuna-33b-v1.3`). Note that you probably want models without RLHF (e.g., not `Llama-2-70b-chat-hf`), as we use text completion endpoints for layout generation, although Mixtral with instruction tuning seems to perform slightly better than Mixtral without instruction tuning. Then change the `--model` argument to the intended model.
+StableBeluga2 is a 70b model so you need at least 2 GPUs, and Mixtral-8x7B-Instruct-v0.1 also requires 2 GPUs (with 80GB memory), but you can run smaller models with only 1 GPU. Simply replace the model path to the huggingface model key (e.g., `meta-llama/Llama-2-70b-hf`, `lmsys/vicuna-33b-v1.3`). Note that you probably want models without RLHF (e.g., not `Llama-2-70b-chat-hf`), as we use text completion endpoints for layout generation, although Mixtral with instruction tuning seems to perform slightly better than Mixtral without instruction tuning. Then change the `--model` argument to the intended model.
 
 If your LLM server is not on `localhost:8000`, you can change the API endpoint URL in [utils/llm.py](https://github.com/TonyLianLong/LLM-groundedDiffusion/blob/main/utils/llm.py). If you model name is not in the list in [utils/llm.py](https://github.com/TonyLianLong/LLM-groundedDiffusion/blob/main/utils/llm.py), you can add it to the `model_names` list. We created this list to prevent typos in the command.
 
