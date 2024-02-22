@@ -199,9 +199,9 @@ python scripts/owl_vit_eval.py --model gpt-4 --run_base_path img_generations/img
 | LMD+ (GPT-3.5)        | 100      | 86       | 69          | 67      | 80.5%     |
 | LMD+ (GPT-4)          | 100      | 84       | 79          | 82      | **86.3%** |
 | LMD+ (StableBeluga2*) | 88       | 60       | 56          | 64      | 67.0%     |
-| LMD+ (Mixtral-8x7B-Instruct-v0.1*) | 97       | 71       | 77          | 81      | 81.0%     |
+| LMD+ (Mixtral-8x7B-Instruct-v0.1*) | 98       | 72       | 62          | 78      | 77.5%     |
 
-\* [StableBeluga2](https://huggingface.co/stabilityai/StableBeluga2) is an open-sourced model based on Llama 2. [Mixtral-8x7B-Instruct-v0.1](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1) is an open-sourced MoE model that can be served on 1x A100 if quantized. We discover that the fact that LLMs' spatial reasoning ability is also applicable to open-sourced models. **Surprisingly, the Mixtral model's performance is comparable with GPT-3.5.** This shows that it's possible to self-host LMD/LMD+ without external API calls to LLMs to achieve good results. However, it can still be improved, compared to proprietary model GPT-4. We leave LLM fine-tuning for better layout generation in stage 1 to future research.
+\* [StableBeluga2](https://huggingface.co/stabilityai/StableBeluga2) is an open-sourced model based on Llama 2. [Mixtral-8x7B-Instruct-v0.1](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1) is an open-sourced MoE model that can be served on 1x A100 if quantized. We discover that the fact that LLMs' spatial reasoning ability is also applicable to open-sourced models. **Surprisingly, the Mixtral model's performance is close to the one with GPT-3.5.** This shows that it's possible to self-host LMD/LMD+ without external API calls to LLMs to achieve good results. However, it can still be improved, compared to proprietary model GPT-4. We leave LLM fine-tuning for better layout generation in stage 1 to future research.
 
 To run generation with LMD with original SD weights and evaluate the generation:
 <details>
