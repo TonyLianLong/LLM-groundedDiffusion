@@ -3,7 +3,7 @@
 
 ***Transactions on Machine Learning Research (TMLR)***, with **Featured Certification**
 
-[Paper](https://arxiv.org/pdf/2305.13655.pdf) | [Project Page](https://llm-grounded-diffusion.github.io/) | [**5-minute Blog Post**](https://bair.berkeley.edu/blog/2023/05/23/lmd/) | [**HuggingFace Demo (updated!)**](https://huggingface.co/spaces/longlian/llm-grounded-diffusion) | [Citation](#citation) | [LLM-grounded Video Diffusion Models](https://llm-grounded-video-diffusion.github.io/)
+[Paper](https://arxiv.org/abs/2305.13655) | [Project Page](https://llm-grounded-diffusion.github.io/) | [**5-minute Blog Post**](https://bair.berkeley.edu/blog/2023/05/23/lmd/) | [**HuggingFace Demo (updated!)**](https://huggingface.co/spaces/longlian/llm-grounded-diffusion) | [Citation](#citation) | [LLM-grounded Video Diffusion Models](https://llm-grounded-video-diffusion.github.io/)
 
 **TL;DR**: Text Prompt -> LLM as a Request Parser -> Intermediate Representation (such as an image layout) -> Stable Diffusion -> Image.
 
