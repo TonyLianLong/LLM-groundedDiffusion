@@ -6,7 +6,7 @@ from utils.parse import size, parse_input_with_negative, filter_boxes
 import traceback
 import time
 
-model_names = ["vicuna", "vicuna-13b", "vicuna-13b-v1.3", "vicuna-33b-v1.3", "Llama-2-7b-hf", "Llama-2-13b-hf", "Llama-2-70b-hf", "FreeWilly2", "StableBeluga2", "gpt-3.5-turbo", "gpt-3.5", "gpt-4", "text-davinci-003"]
+model_names = ["vicuna", "vicuna-13b", "vicuna-13b-v1.3", "vicuna-33b-v1.3", "Llama-2-7b-hf", "Llama-2-13b-hf", "Llama-2-70b-hf", "FreeWilly2", "StableBeluga2", "gpt-3.5-turbo", "gpt-3.5", "gpt-4", "text-davinci-003", "Mixtral-8x7B-Instruct-v0.1"]
 
 def get_full_prompt(template, prompt, suffix=None):
     full_prompt = template.format(prompt=prompt)
@@ -31,7 +31,7 @@ def get_llm_kwargs(model, template_version):
 
     template = templates[template_version]
 
-    if "vicuna" in model.lower() or "llama" in model.lower() or "freewilly" in model.lower() or "stablebeluga2" in model.lower():
+    if "vicuna" in model.lower() or "llama" in model.lower() or "freewilly" in model.lower() or "stablebeluga2" in model.lower() or "mistral" in model.lower() or "mixtral" in model.lower():
         api_base = "http://localhost:8000/v1"
         max_tokens = 900
         temperature = 0.25
