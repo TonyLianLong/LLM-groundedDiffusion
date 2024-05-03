@@ -98,7 +98,7 @@ Feel free to contact me / submit a pull request to add your methods!
 <summary> And more exciting features! Expand to see. </summary>
 
 * **FlashAttention and PyTorch v2 supported**.
-* **Unified benchmark:** same evaluation protocol on layouts (stage 1) and generated images (stage 1+2) for all methods implemented. The benchmark is in beta and might change.
+* **Unified benchmark:** same evaluation protocol on layouts (stage 1) and generated images (stage 1+2) for all methods implemented.
 * **Provides different presets** to balance better control and fast generation in Web UI.
 
 </details>
@@ -182,7 +182,7 @@ python generate.py --prompt-type demo --model gpt-4 --save-suffix "gpt-4" --repe
 `--save-suffix` is the suffix added to the name of the run. You can change that if you change the args to mark the setting in the runs. `--run-model` specifies the method to run. You can set to LMD/LMD+ or the implemented baselines (with examples below). Use `--use-sdv2` to enable SDv2.
 
 ### Run our benchmark on layout-to-image generation evaluation
-We use a unified evaluation metric as stage 1 in stage 2 (`--prompt-type lmd`). Since we have layout boxes for stage 1 but only images for stage 2, we use OWL-ViT in order to detect the objects and ensure they are generated (or not generated in negation) in the right number, with the right attributes, and in the right place. This benchmark is still in beta stage.
+We use a unified evaluation metric as stage 1 in stage 2 (`--prompt-type lmd`). Since we have layout boxes for stage 1 but only images for stage 2, we use OWL-ViT in order to detect the objects and ensure they are generated (or not generated in negation) in the right number, with the right attributes, and in the right place.
 
 This runs generation with LMD+ and evaluate the generation: 
 ```shell
