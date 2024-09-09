@@ -298,7 +298,10 @@ Note that we allows different versions of templates so that you can manage sever
 Please contact Long (Tony) Lian if you have any questions: `longlian@berkeley.edu`.
 
 ## Acknowledgements
-This repo uses code from [diffusers](https://huggingface.co/docs/diffusers/index), [GLIGEN](https://github.com/gligen/GLIGEN), and [layout-guidance](https://github.com/silent-chen/layout-guidance). This code also has an implementation of [boxdiff](https://github.com/showlab/BoxDiff) and [MultiDiffusion (region control)](https://github.com/omerbt/MultiDiffusion/tree/master). Using their code means adhering to their license.
+This repo uses code from [diffusers](https://huggingface.co/docs/diffusers/index), [GLIGEN](https://github.com/gligen/GLIGEN), and [layout-guidance](https://github.com/silent-chen/layout-guidance). This code also has an implementation of [boxdiff](https://github.com/showlab/BoxDiff) and [MultiDiffusion (region control)](https://github.com/omerbt/MultiDiffusion/tree/master). Using their code means adhering to their license. The code that is not from other repos adhere to MIT License, with an additional note:
+```
+THIS SOFTWARE AND/OR DATA WAS DEPOSITED IN THE BAIR OPEN RESEARCH COMMONS REPOSITORY ON 9/9/24.
+```
 
 ## Citation
 If you use our work or our implementation in this repo, or find them helpful, please consider giving a citation.
