@@ -126,6 +126,14 @@ python prompt_batch.py --prompt-type demo --model gpt-4 --auto-query --always-sa
 
 You can visualize the bounding boxes in `img_generations/imgs_demo_templatev0.1`.
 
+### Option 1b (automated): Use a MiniMax API key
+[MiniMax](https://www.minimax.io/) offers powerful cloud LLM models (MiniMax-M2.7, MiniMax-M2.7-highspeed) via an OpenAI-compatible API. Set your API key and run:
+```
+export MINIMAX_API_KEY=your_minimax_api_key
+python prompt_batch.py --prompt-type demo --model MiniMax-M2.7 --auto-query --always-save --template_version v0.1
+```
+Available MiniMax models: `MiniMax-M2.7`, `MiniMax-M2.7-highspeed`, `MiniMax-M2.5`, `MiniMax-M2.5-highspeed`.
+
 ### Option 2 (free): Manually copy and paste to ChatGPT
 ```
 python prompt_batch.py --prompt-type demo --model gpt-4 --always-save --template_version v0.1

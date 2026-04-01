@@ -6,7 +6,7 @@ from utils.parse import size, parse_input_with_negative, filter_boxes
 import traceback
 import time
 
-model_names = ["vicuna", "vicuna-13b", "vicuna-13b-v1.3", "vicuna-33b-v1.3", "Llama-2-7b-hf", "Llama-2-13b-hf", "Llama-2-70b-hf", "FreeWilly2", "StableBeluga2", "gpt-3.5-turbo", "gpt-3.5", "gpt-4", "text-davinci-003", "Mixtral-8x7B-Instruct-v0.1"]
+model_names = ["vicuna", "vicuna-13b", "vicuna-13b-v1.3", "vicuna-33b-v1.3", "Llama-2-7b-hf", "Llama-2-13b-hf", "Llama-2-70b-hf", "FreeWilly2", "StableBeluga2", "gpt-3.5-turbo", "gpt-3.5", "gpt-4", "text-davinci-003", "Mixtral-8x7B-Instruct-v0.1", "MiniMax-M2.5", "MiniMax-M2.5-highspeed", "MiniMax-M2.7", "MiniMax-M2.7-highspeed"]
 
 def get_full_prompt(template, prompt, suffix=None):
     full_prompt = template.format(prompt=prompt)
@@ -36,6 +36,13 @@ def get_llm_kwargs(model, template_version):
         max_tokens = 900
         temperature = 0.25
         headers = {}
+    elif "minimax" in model.lower():
+        from utils.api_key import minimax_api_key
+
+        api_base = "https://api.minimax.io/v1"
+        max_tokens = 900
+        temperature = 0.25
+        headers = {"Authorization": f"Bearer {minimax_api_key}"}
     else:
         from utils.api_key import api_key
         
@@ -56,7 +63,7 @@ def get_layout(prompt, llm_kwargs, suffix=""):
     done = False
     attempts = 0
     while not done:
-        if "gpt" in model:
+        if "gpt" in model or "minimax" in model.lower():
             r = requests.post(f'{api_base}/chat/completions', json={
                 "model": model,
                 "messages": [{"role": "user", "content": get_full_prompt(template, prompt, suffix).strip()}],
@@ -85,7 +92,7 @@ def get_layout(prompt, llm_kwargs, suffix=""):
             print("Exiting due to many non-successful attempts")
             exit()
 
-    if "gpt" in model:
+    if "gpt" in model or "minimax" in model.lower():
         response = r.json()['choices'][0]['message']['content']
     else:
         response = r.json()['choices'][0]['text']
